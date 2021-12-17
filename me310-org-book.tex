@@ -1,20 +1,19 @@
-% Created 2019-08-01 Thu 08:26
+% Created 2021-11-25 Thu 17:25
 % Intended LaTeX compiler: xelatex
 \documentclass[a4paper,openany,12pt]{book}
 \usepackage{graphicx}
-\usepackage{grffile}
 \usepackage{longtable}
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
 \usepackage{amsmath}
-\usepackage{textcomp}
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usepackage{fontspec}
 \usepackage{polyglossia}
 \setdefaultlanguage{thai}
+\setotherlanguage{english}
 \usepackage{xltxtra}
 \usepackage{caption}
 \usepackage{setspace}
@@ -23,7 +22,6 @@
 \usepackage[margin=1in]{geometry}
 \XeTeXlinebreaklocale "th_TH"
 \XeTeXlinebreakskip = 0pt plus 1pt
-\usepackage{fonts-tlwg}
 \setmainfont[Ligatures=TeX]{TH Sarabun New}
 \newfontfamily\thaifont[Scale=1.23]{TH Sarabun New}
 \usepackage[parfill]{parskip}
@@ -45,8 +43,10 @@
  pdftitle={การออกแบบเครื่องกล 1},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 27.0.50 (Org mode 9.2.4)}, 
+ pdfcreator={Emacs 28.0.60 (Org mode 9.6)}, 
  pdflang={English}}
+\usepackage{biblatex}
+\addbibresource{~/gdrive/Classes/ME438/Teaching Materials/Solar Energy Book/solar-org-book.bib}
 \begin{document}
 
 \begin{titlepage}
@@ -73,7 +73,7 @@
 \pagecolor{White}
 
 \chapter*{คำนำ}
-\label{sec:orge4d8c6a}
+\label{sec:org8332cb6}
 The materials accumulated herein is intended for use as a reading and
 teaching references for ME 310: Mechanical Design I. The main objective
 of the class is to introduce students to the concepts of mechanical
@@ -107,43 +107,42 @@ design tool.
 สัปปินันทน์ เอกอำพน
 
 \chapter*{บันทึกแก้ไข}
-\label{sec:org5257c88}
-\begin{itemize}
-\item July 2014
-\label{sec:org20121ab}
+\label{sec:orge0f3936}
+\subsection*{July 2014}
+\label{sec:org337ef07}
 
 Initial complete contents of Chapters 1 - 7.
 
-\item March 2015
-\label{sec:org96f2648}
+\subsection*{March 2015}
+\label{sec:orgff5665e}
 
 Added Chapter 8.
 
-\item August 2015
-\label{sec:orgc1f1695}
+\subsection*{August 2015}
+\label{sec:orga629057}
 
 Added Chapter 9.
 
-\item April 2016
-\label{sec:orgff2273e}
+\subsection*{April 2016}
+\label{sec:orgdc6a4a7}
 
 Added Exercises in Chapters 1 - 2.
 
-\item September 2016
-\label{sec:orga5139ad}
+\subsection*{September 2016}
+\label{sec:orga27b515}
 
 Added Chapters 10 and 11. Added exercises in Chapters 6 - 11.
 
-\item February 2017
-\label{sec:org2fdf1c9}
+\subsection*{February 2017}
+\label{sec:orgb834d00}
 
-Migrated to \LaTeX{} from Microsoft Word. Added original graphics for
+Migrated to \LaTeX$\backslash$ from Microsoft Word. Added original graphics for
 Chapters 3 - 10.
+
 
 \tableofcontents
 \listoffigures
 \listoftables
-\end{itemize}
 \part{ทบทวนเตรียมความพร้อม}
 \label{the-preparations}
 \chapter{การออกแบบทางวิศวกรรมเบื้องต้น}
@@ -176,12 +175,14 @@ recognition of problems or needs for a part, machine, or system. The
 problems or needs are then formulated into sets of requirements and
 constraints. In design problems, there are usually more than one right
 answer. Design considerations often require a trial-and-error process,
-as illustrated by
-[[\#fig: engineering design processes]\ref{fig: engineering design processes}].
+as illustrated by \ref{fig: engineering design processes}
 
 
-\url{pictures/intro-eng-design/eng-design-process}
+\hyperref[fig: engineering design processes]{\begin{figure}[htbp]
 
+\includegraphics[width=.9\linewidth]{pictures/intro-eng-design/eng-design-process.pdf}
+\caption{\label{fig: engineering design processes}Flowchart of typical engineering design processes}
+\end{figure}}
 Product realization and production involve multiple, recursive, and
 sometimes, concurrent processes. There are also many possible backward
 loops where corrections need to be made in earlier stages of design. For
@@ -407,8 +408,7 @@ of a general guideline for safety factor selection. These factors are
 based on yield strength.
 
 \begin{table}[htbp]
-\caption{\label{table: safety factor guideline}
-ตารางแสดงค่าความปลอดภัยแนะนำสำหรับวัสดุ ลักษณะการใช้งาน และลักษณะภาระ}
+\caption{\label{table: safety factor guideline}ตารางแสดงค่าความปลอดภัยแนะนำสำหรับวัสดุ ลักษณะการใช้งาน และลักษณะภาระ}
 \centering
 \begin{tabular}{ll}
 \toprule
@@ -663,7 +663,7 @@ the surfaces of low- and medium-carbon steels.
 Nitriding adds nitrogen to an already machined and heat-treated part.
 The temperature of the process is 1000\$\textsuperscript{\^{}}\(F (538\)\textsuperscript{\^{}}\$C) or
 less, and no quenching is involved. This feature eliminates possible
-distortion problems. For maximum case hardness, special "nitralloy"
+distortion problems. For maximum case hardness, special ``nitralloy''
 steels (containing aluminum as an alloy) are often used. Medium-carbon
 alloy steels (notably 4340) are also nitrided. Induction hardening and
 flame hardening heat only the surfaces of parts made of medium-carbon
@@ -795,15 +795,13 @@ materials. The basic chemical units of plastic materials are monomers.
 Under appropriate conditions, usually involving heat, pressure, or both,
 polymerization takes place, combining monomers into polymers. Typical
 monomers and their corresponding repeating polymer units are shown in
-[[\#fig: polymers and repeating units]\ref{fig: polymers and repeating units}].
-
+\ref{fig: polymers and repeating units}
 
 \cite{secondaryscience4all}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/Material-selection/polymer.png}
-\caption{\label{fig: polymers and repeating units}
-Monomers and repeating polymer units of common polymers.}
+\caption{\label{fig: polymers and repeating units}Monomers and repeating polymer units of common polymers.}
 \end{figure}
 
 The addition of more and more monomers to form longer and longer polymer
@@ -993,7 +991,7 @@ brown.
 transparent or opaque; gives off no volatiles during curing,but mold
 shrinkage is considerable; can use low-cost molds without heat or
 pressure; widely used with glass reinforcement to produce
-"fiber-glass" components; also available in thermoplastic
+``fiber-glass'' components; also available in thermoplastic
 formulations.
 
 \item Polyurethane: Can be flexible or rigid, depending on formulation;
@@ -1194,8 +1192,7 @@ alloys and polymers have strength up to only 800\)\textsuperscript{\^{}}\(C and
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/Material-selection/strength-temperature-diagram.pdf}
-\caption{\label{fig: strength temperature diagram}
-Material strength at different temperatures, \(S(T)\), versus temperature, \(T\), chart. \cite{ashby2010materials}}
+\caption{\label{fig: strength temperature diagram}Material strength at different temperatures, \(S(T)\), versus temperature, \(T\), chart. \cite{ashby2010materials}}
 \end{figure}
 
 Material selection for a gas turbine transmission shaft.
@@ -1211,18 +1208,18 @@ In order for the shaft to still operate above 300 C, the shaft \emph{must}
 have strength above that temperature. This is where the
 strength-temperature chart is very useful.
 
-According to
-[[\#fig: strength temperature diagram]\ref{fig: strength temperature diagram}],
-we can draw a vertical line at 300 C. Materials that fall to the left
+According to \ref{fig: strength temperature diagram} we can draw a vertical line at 300 C. Materials that fall to the left
 side do not qualify as they do not possess sufficient strength above 300
-C. That means all engineering composites, plastics, foams, along with
+\begin{enumerate}
+\item That means all engineering composites, plastics, foams, along with
+\end{enumerate}
 aluminum, zinc, and magnesium alloys do not pass this requirement.
 
 For the minimum weight design, we refer to the strength-density chart.
 For shaft, the index \(S^{1/2}/\rho\) is used to determine a proper
 material. The material (or group of materials) with the highest index
 will yield the minimum weight for a given torque requirement. From
-[[\#fig: strength density diagram]\ref{fig: strength density diagram}], the
+\ref{fig: strength density diagram}, the
 possible candidates are metal alloys. Combining this with the
 elimination we have made for the temperature requirement, the qualified
 materials are steels, titanium alloys, and Ni alloys.
@@ -1387,8 +1384,7 @@ $$\arraycolsep=1.4pt\def1.4{2.2}
 
 \subsection{Equilibrium Requirement}
 \label{equilibrium-requirement}
-Consider an infinitesimal cubic element, illustrated in
-[[\#fig: 3d-stress-element]\ref{fig: 3d-stress-element}], with external
+Consider an infinitesimal cubic element, illustrated in \ref{fig: 3d-stress-element}, with external
 forces applied, each of the six faces of the cube will have three
 components of stress acting on it. If the stress around the point is
 constant, then we can use equilibrium equation to relate some of the
@@ -1509,7 +1505,9 @@ modulus of elasticity or Young's modulus.
 \label{poissons-ratio}
 When a deformable body is subjected to an axial tensile force, not only
 does it elongate but it also contracts laterally. A French scientist S.
-D. Poisson found that the ratio between lateral and the longitudinal
+\begin{enumerate}
+\item Poisson found that the ratio between lateral and the longitudinal
+\end{enumerate}
 strains are always constant in the elastic regime. This constant is
 referred to as Poisson's ratio, \(\nu\), defined as
 
@@ -1725,8 +1723,7 @@ change.
   \label{fig: 3d torsional deformation}
 \end{figure}
 
-Consider a circular bar under torsion in
-[[\#fig: 3d torsional deformation]\ref{fig: 3d torsional deformation}].
+Consider a circular bar under torsion in \ref{fig: 3d torsional deformation}.
 Under the action of torque \(T\), if the left-hand end is fixed, the
 right-hand end will rotate through a small angle \(\phi\), known as the
 angle of twist. The angle of twist changes along the axis of the bar,
@@ -1755,9 +1752,7 @@ analyze the state of stress of the bar in torsion. We have
 $$\tau  = G\gamma$$
 
 in which \(G\) is the shear modulus of elasticity. We can combine this
-equation with
-[[\#eqn: strain and angle of twist]\ref{eqn: strain and angle of twist}]
-and [[\#eqn: strain and radius]\ref{eqn: strain and radius}] to get
+equation with \ref{eqn: strain and angle of twist} and \ref{eqn: strain and radius} to get
 
 $$\begin{gathered}
     \tau _{\max } = Gr\theta  \hfill \\
@@ -1985,8 +1980,7 @@ plane and normal to the longitudinal axis.
 \end{figure}
 
 Because of the bending deformations, cross sections rotate with respect
-to each other about axes perpendicular to \(xy\) plane. As shown in
-[[\#fig: pure bending]\ref{fig: pure bending}], longitudinal lines of the
+to each other about axes perpendicular to \(xy\) plane. As shown in \ref{fig: pure bending}, longitudinal lines of the
 convex part of the beam are elongated, while those on the concave side
 are shortened. Therefore, the lower part of the beam is in tension while
 the upper part is in compression. Somewhere between the top and bottom
@@ -2040,8 +2034,7 @@ example, when the bending moment \(M\) is positive and the beam bends with
 positive curvature, the stresses are negative (compression) above the
 neutral surface and positive (tension) below it.
 
-However, in order for
-[[\#eqn: stress-strain bending]\ref{eqn: stress-strain bending}] to be
+However, in order for \ref{eqn: stress-strain bending} to be
 useful, we must first determine the location of the neutral axis on the
 cross section so that we may find the distance of the point of interest
 from it.
@@ -2049,7 +2042,7 @@ from it.
 The location of the neutral axis can be determined by employing a static
 equilibrium equation. We know that the resultant force on any cross
 section of the beam is zero. We may then apply
-[[\#eqn: stress-strain bending]\ref{eqn: stress-strain bending}] using this
+\ref{eqn: stress-strain bending} using this
 fact, thus we have
 
 $$\int_A\sigma_x dA  =  - \int_A E\kappa ydA  = 0$$
@@ -2109,8 +2102,8 @@ called the \emph{flexural rigidity} of the beam.
 Now that we have located the neutral axis and derived the
 moment-curvature relationship, we can determine the stress inside the
 beam from the bending moment. Substituting
-[[\#eqn: moment-curvature]\ref{eqn: moment-curvature}] into
-[[\#eqn: stress-strain bending]\ref{eqn: stress-strain bending}], we have
+\ref{eqn: moment-curvature} into
+\ref{eqn: stress-strain bending}, we have
 
 $$ \sigma_x =  - \frac{My}{I}$$
 
@@ -2121,7 +2114,7 @@ linearly with the distance \(y\) from the neutral axis.
 
 \subsection{Maximum stress at a cross section}
 \label{maximum-stress-at-a-cross-section}
-From [[\#eqn: flexure formula]\ref{eqn: flexure formula}], we know that the
+From \ref{eqn: flexure formula}, we know that the
 maximum tensile stress and compressive stress on a given cross section
 occurs at points located the furthest away from the neutral axis. Assume
 the distance from the neutral axis to the extreme elements above and
@@ -2201,8 +2194,7 @@ us
 
 $$F_3 = \tau bdx$$
 
-Substitute this into
-[[\#eqn: shear stress eval]\ref{eqn: shear stress eval}] and solve for
+Substitute this into \ref{eqn: shear stress eval} and solve for
 shear stress gives
 
 $$\tau  = \frac{dM}{dx}\left( \frac{1}{Ib} \right) \int ydA$$
@@ -2291,17 +2283,16 @@ curvature of the beam is very small. For very small angle,
 
 $$ds \approx dx$$
 
-And so [[\#eqn: deflection curve]\ref{eqn: deflection curve}] becomes
+And so \ref{eqn: deflection curve} becomes
 
 $$ \kappa  = \frac{1}{\rho } = \frac{d\theta }{dx}$$
 
 Also, when the angle is small \(\tan\theta \approx \theta\) so we can
-simplify [[\#eqn: tan approx]\ref{eqn: tan approx}] to
+simplify \ref{eqn: tan approx} to
 
 $$\theta  = \frac{dv}{dx}$$
 
-Substituting this into
-[[\#eqn: deflection curve 2]\ref{eqn: deflection curve 2}] and we have
+Substituting this into \ref{eqn: deflection curve 2} and we have
 
 $$\kappa  = \frac{1}{\rho } = \frac{d^2v}{dx^2}$$
 
@@ -2310,7 +2301,7 @@ are small.
 
 If we assume that the material of a beam is linearly elastic and follows
 Hooke's law, and that the curvature of the beam follows
-[[\#eqn: moment-curvature]\ref{eqn: moment-curvature}], then we can derive
+\ref{eqn: moment-curvature}, then we can derive
 the \emph{differential equation of the deflection curve} as
 
 $$\frac{d^2v}{dx^2} = \frac{M}{EI}$$
@@ -2327,13 +2318,13 @@ $$\frac{dM}{dx} = V \hspace{1cm} \frac{dV}{dx} =  - q$$
 
 In the case of a nonprismatic beam, the flexural rigidity \(EI\) is
 varying along the length of the beam. We write
-[[\#eqn: diff equation of deflection]\ref{eqn: diff equation of deflection}]
+\ref{eqn: diff equation of deflection}
 in the form
 
 $$EI\frac{d^2v}{dx^2} = M$$
 
 Differentiating both sides of this equation and substitute values from
-[[\#eqn: shear force and load intensity]\ref{eqn: shear force and load intensity}]
+\ref{eqn: shear force and load intensity}
 gives
 
 $$\begin{gathered}
@@ -2609,8 +2600,7 @@ moment at any length \(x\) is
 
 $$M(x) =  - P(L - x)$$
 
-This allows us to compute the deflection directly by employing
-[[\#eqn: energy method]\ref{eqn: energy method}], thus
+This allows us to compute the deflection directly by employing \ref{eqn: energy method}, thus
 
 $$\begin{aligned}
   \delta_i &= \int \left( \frac{M}{EI} \right) \left( \frac{\partial M}{\partial P_i} \right)dx \\ 
@@ -2774,7 +2764,7 @@ principal direction in this element
 
 
 To determine the maximum shear stress, simply substitute the values into
-[[\#eqn: max shear stress]\ref{eqn: max shear stress}] and obtain
+\ref{eqn: max shear stress} and obtain
 
 $$\begin{aligned}
       \tau_{xy} &= \sqrt {\left( \frac{\sigma_x - \sigma_y}{2} \right)^2 + \tau _{xy}^2}  \\ 
@@ -2873,7 +2863,7 @@ discontinuities (holes, fillets, notches, etc.). The diagrams included
 herein are by no means exhaustive.
 
 It is important to remember that
-[[\#eqn: stress concentration]\ref{eqn: stress concentration}] is valid as
+\ref{eqn: stress concentration} is valid as
 long as the values of \(\sigma_{max}\) do not exceed the yield stress of
 the material, since the \$K\$s are based upon a linear stress-strain
 relationship. The discussion presented here is also only applicable to
@@ -3206,7 +3196,7 @@ unit volume of the same material when it is subjected to yielding in a
 simple tension test. This is called the \emph{maximum distortion energy
 theory}. To obtain the distortion energy per unit volume, we substitute
 the distortion stresses into
-[[\#eqn: distortion energy density]\ref{eqn: distortion energy density}].
+\ref{eqn: distortion energy density}.
 Expanding and simplifying, we have that
 
 $$u_d = \frac{1 + \nu}{6E}\left[ (\sigma_1 - \sigma_2)^2 + (\sigma _2 - \sigma_3)^2 + (\sigma_3 - \sigma_1)^2 \right]$$
@@ -3228,7 +3218,7 @@ This equation represents an elliptical curve. Once the state of stress
 of a material falls outside the ellipse, the material is said to have
 failed. In comparison the maximum distortion energy theory is slightly
 more aggressive in terms of yield prediction, as shown in
-[[\#fig: MDET safe zone]\ref{fig: MDET safe zone}].
+\ref{fig: MDET safe zone}.
 
 \begin{figure}[h]
   \centering
@@ -3358,7 +3348,7 @@ $$\begin{gathered}
   \end{gathered}$$
 
 These equations are shown graphically in
-[[\#fig: MNST safe zone]\ref{fig: MNST safe zone}]. It is seen that if the
+\ref{fig: MNST safe zone}. It is seen that if the
 stress coordinate at a point in the material falls on the boundary or
 outside the shaded area, the material is said to fracture.
 
@@ -3418,7 +3408,7 @@ $$\begin{array}{c c}
   \end{array}$$
 
 The failure condition diagram for the theory is illustrated in
-[[\#fig: MCM safe zone]\ref{fig: MCM safe zone}]
+\ref{fig: MCM safe zone}
 
 \begin{figure}[h]
   \centering
@@ -3449,10 +3439,10 @@ the best fit to most experimental results and should be applied.
 
 \section{Fatigue}
 \label{fatigue}
-Fatigue has been defined as "the progressive localized permanent
+Fatigue has been defined as ``the progressive localized permanent
 structural change that occurs in a material subjected to repeated or
 fluctuating strains at stresses having a maximum value less than the
-tensile strength of the material" (ASM, 1975). Fracture of a structural
+tensile strength of the material'' (ASM, 1975). Fracture of a structural
 member as a result of repeated cycles of load or fluctuating loads in
 commonly referred to as a fatigue fracture or fatigue failure. The
 corresponding number of load cycles or the time during which the member
@@ -3679,8 +3669,7 @@ $$P_{cr} = \frac{\pi ^2EI}{L^2}$$
 This load is sometimes referred to as the \emph{Euler load}.
 
 For the corresponding buckling mode shapes, substitute the expression in
-equation [[\#eqn: mode shape sub]\ref{eqn: mode shape sub}] into
-[[\#eqn: gen solution]\ref{eqn: gen solution}] along with other solved
+equation \ref{eqn: mode shape sub} into \ref{eqn: gen solution} along with other solved
 parameters, we have
 
 $$v = C_2\sin \frac{n\pi x}{L}$$
@@ -3962,7 +3951,7 @@ load P at the free end.
 
 In general, shear stress distribution in a beam takes a parabolic shape,
 while normal stress distribution takes a linear shape, shown in
-[[\#fig: stress in beam]\ref{fig: stress in beam}]. Notice that the top and
+\ref{fig: stress in beam}. Notice that the top and
 bottom parts of the beam only take normal stress, while the middle part
 only takes shear stress. Any other region of the beam takes a
 combination of normal and shear stresses.
@@ -3971,13 +3960,12 @@ combination of normal and shear stresses.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/Simple-load-bearing/stress-in-beam.pdf}
-\caption{\label{fig: stress in beam}
-Shear and normal stress distributions in a cantilever beam.}
+\caption{\label{fig: stress in beam}Shear and normal stress distributions in a cantilever beam.}
 \end{figure}
 
 At each point, the state of stress can be transformed into principal
 stresses. The results are shown in
-[[\#fig: stress traject in beam]\ref{fig: stress traject in beam}]. Notice
+\ref{fig: stress traject in beam}. Notice
 that on the right column, the element undergoes a counterclockwise
 rotation, from \(0^{\circ}\) at the top, to \(45^{\circ}\) in the middle, to
 \(90^{\circ}\) at the bottom.
@@ -4012,7 +4000,7 @@ the beam will be relatively long, so that the internal bending moments
 are large. With large bending moments, the first design concern is the
 normal bending stress, then shear stress. To control the normal stress,
 the beam must have sufficient section modulus. Following
-[[\#eqn: section modulus]\ref{eqn: section modulus}], we have that the
+\ref{eqn: section modulus}, we have that the
 required section modulus of a beam with maximum bending moment
 \(M_{\max}\) and allowable stress \(\sigma_{allow}\) is
 
@@ -4099,7 +4087,7 @@ $$\begin{aligned}
             &= 2.7 \times 10^{-4} \text{ m}^3 = 2.7 \times 10^5 \text{ mm}^3
   \end{aligned}$$
 
-Refering to [[\#table: s-shaped sections]\ref{table: s-shaped sections}],
+Refering to \ref{table: s-shaped sections},
 the proper section is S250 \(\times\) 37.8.
 
 The problem also specified the maximum deflection, which also occurs in
@@ -4137,11 +4125,11 @@ wide-flanged beam so effective in resisting bending moment with minimal
 weight.
 
 For very large loads, however, there may not be a beam with a
-sufficiently large section modulus. Engineers often "build up" a beam
+sufficiently large section modulus. Engineers often ``build up'' a beam
 made of plates and angles. A beam with deep I-shaped cross section made
 from built-up plates and angles are called a plate girder where angles
 are either bolted or welded to plates forming I-shape, illustrated in
-[[\#fig: steel fabricated beam]\ref{fig: steel fabricated beam}].
+\ref{fig: steel fabricated beam}.
 
 
 angles
@@ -4185,7 +4173,7 @@ misleading.
 
 Though caution is advised when designing beams using the flexure
 formula, we can see that by applying
-[[\#eqn: flexure formula]\ref{eqn: flexure formula}] the general shape of
+\ref{eqn: flexure formula} the general shape of
 the beam can be determined. The only difference is that \(S_{req}\) is now
 a function of the position along the length of the beam. A beam designed
 this way is called a fully stressed beam. It is important to note that
@@ -4203,7 +4191,7 @@ $$M(x) = F(x-L)$$
 
 Assume that the base and thickness of the beam as functions of length
 are \(b(x)\) and \(h(x)\), respectively. We can rewrite
-[[\#eqn: beam required section]\ref{eqn: beam required section}] as
+\ref{eqn: beam required section} as
 
 $${\renewcommand{1.2}{2.5}
   \begin{array}{l}
@@ -4339,7 +4327,7 @@ surface. The state of stress at the critical point reduces to
 $$\sigma = \frac{Mr}{I}$$ $$\tau = \frac{Tr}{J}$$
 
 in which case, the required shaft radius from
-[[\#eqn: shaft radius without axial]\ref{eqn: shaft radius without axial}]
+\ref{eqn: shaft radius without axial}
 is
 
 $$\begin{aligned}
@@ -4366,7 +4354,7 @@ support their intended loads without buckling.
 Simple columns refer to prismatic columns with homogeneous materials and
 ideal supports. The governing equations of these columns have already
 been derived and discussed in details in \hyperref[section: buckling]{4.3}.
-Employing [[\#eqn: Euler's formula]\ref{eqn: Euler's formula}], we have
+Employing \ref{eqn: Euler's formula}, we have
 that the critical load for a column is
 
 $$P_{cr} = \frac{\pi ^2EI}{(KL)^2}$$
@@ -4417,7 +4405,7 @@ column design, which give the maximum allowable stress in the column for
 a specific range of slenderness ratio.
 
 For long columns, the Euler's
-formula--[[\#eqn: Euler's formula]\ref{eqn: Euler's formula}]--is proposed
+formula--\ref{eqn: Euler's formula}--is proposed
 
 $$\sigma_{\max} = \frac{\pi^2E}{\lambda^2}$$
 
@@ -4640,31 +4628,31 @@ steel from \hyperref[appendix: structural steel properties]{2}.
 
 F = 50000 L = 4 M = F*L/4 Ns = 3
 
-tex.print("The bending moment caused by the midpoint load is "..M.."
+tex.print(``The bending moment caused by the midpoint load is ''..M..``
 N-m. Refering to the S-shaped steel, we can generate results using
 interaction formula\\
 crefeqn: interaction formula.\\
 
-")
+'')
 
-sigmaallow = 300 * 10$\backslash$\textsuperscript{6} / Ns designation = "S610 x 149", "S510 x 143",
-"S460 x 104", "S380 x 74", "S310 x 74", "S250 x 52" Area = 18900*10$\backslash$\textsuperscript{-6},
+sigmaallow = 300 * 10$\backslash$\textsuperscript{6} / Ns designation = ``S610 x 149'', ``S510 x 143'',
+``S460 x 104'', ``S380 x 74'', ``S310 x 74'', ``S250 x 52'' Area = 18900*10$\backslash$\textsuperscript{-6},
 18200*10$\backslash$\textsuperscript{-6}, 13200*10$\backslash$\textsuperscript{-6}, 9480*10$\backslash$\textsuperscript{-6}, 9420*10$\backslash$\textsuperscript{-6}, 6650*10$\backslash$\textsuperscript{-6} S =
 3260 * 10$\backslash$\textsuperscript{-6}, 2700 * 10$\backslash$\textsuperscript{-6}, 1690*10$\backslash$\textsuperscript{-6}, 1060*10$\backslash$\textsuperscript{-6}, 829*10$\backslash$\textsuperscript{-6},
-482*10$\backslash$\textsuperscript{-6} tex.print("\\
-begincenter") tex.print("\\
-begintabularlccc") tex.print("\\
-toprule") tex.print("Designation \& Axial Stress (MPa) \& Bending Stress
+482*10$\backslash$\textsuperscript{-6} tex.print(``\\
+begincenter'') tex.print(``\\
+begintabularlccc'') tex.print(``\\
+toprule'') tex.print(``Designation \& Axial Stress (MPa) \& Bending Stress
 (MPa) \&
 \$$\backslash$\dfrac{\\sigma _a}\{($\backslash$\(\sigma\)\textsubscript{a})\textsubscript{allow}\} + $\backslash$\dfrac{\\sigma_b}\{($\backslash$\(\sigma\)\textsubscript{b})\textsubscript{allow}\}\$\\
 
-") tex.print("\\
-midrule") for i=1,6 do tex.print(string.format("
+'') tex.print(``\\
+midrule'') for i=1,6 do tex.print(string.format(``
 designation[i],F/Area[i]/10$\backslash$\textsuperscript{6,M}/S[i]/10$\backslash$\textsuperscript{6},(F/Area[i] +
-M/S[i])/sigmaallow)) end tex.print("\\
-bottomrule") tex.print("\\
-endtabular") tex.print("\\
-endcenter")
+M/S[i])/sigmaallow)) end tex.print(''\\
+bottomrule``) tex.print(''\\
+endtabular``) tex.print(''\\
+endcenter``)
 
 In this example, the proper section will give the sum of stress ratios
 closest to but less than 1, which is S310 x 74.
@@ -4680,11 +4668,10 @@ works. In this problem, we will be analyzing a type of crane called a
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/Simple-load-bearing/tower-crane2.pdf}
-\caption{\label{tower crane}
-a typical luffing crane}
+\caption{\label{tower crane}a typical luffing crane}
 \end{figure}
 
-As illustrated in [[\#tower crane]\ref{tower crane}], a luffing crane
+As illustrated in \ref{tower crane}, a luffing crane
 typically consists of a main mast, a jib, a gantry and a counterweight.
 The jib and the gantry are \emph{always} perpendicular, but the jib can vary
 in angle with the horizontal line. In this problem, however, we will
@@ -4848,14 +4835,13 @@ respectively. The pulley's diameter is 10 cm. Size the shaft under
 [lab:\arabic{chapter}.\arabic{exercisesi}] A
 footbridge is made of a series of columns, rails, and planks. A
 simplified section of the bridge is shown in
-[[\#fig: footbridge exercise]\ref{fig: footbridge exercise}].
+\ref{fig: footbridge exercise}.
 
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/Simple-load-bearing/footbridge.pdf}
-\caption{\label{fig: footbridge exercise}
-a footbridge}
+\caption{\label{fig: footbridge exercise}a footbridge}
 \end{figure}
 
 The columns, rails, and planks are all made of Rosewood, a brittle
@@ -4928,7 +4914,7 @@ Perhaps the simplest of all the spring forms is the torsion bar. Common
 applications include part of automotive suspension springs and counter
 balancing springs for car hoods and trunk lids. A typical torsion bar
 spring suspension assembly is illustrated in
-[[\#fig: torsion bar spring]\ref{fig: torsion bar spring}]. These spring
+\ref{fig: torsion bar spring}. These spring
 rely on elastic deformation under torsion to store and release strain
 energy.
 
@@ -4936,8 +4922,7 @@ energy.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/Spring-design/torsion-bar-spring.pdf}
-\caption{\label{fig: torsion bar spring}
-Torsion bar spring suspension system}
+\caption{\label{fig: torsion bar spring}Torsion bar spring suspension system}
 \end{figure}
 
 \subsection{Torsion Bar Spring Stress and Deformation}
@@ -5059,7 +5044,7 @@ their geometry.
 \label{helical-spring-stress}
 Consider helical coil springs with relatively small helix angle and wire
 diameter d, illustrated in
-[[\#fig: helical spring geometry]\ref{fig: helical spring geometry}]. At
+\ref{fig: helical spring geometry}. At
 each end of the spring, external force F is applied along the axis of
 the helix. In compression springs, this is accomplished by winding the
 end coils with zero pitch and grinding the ends flat to insure uniformly
@@ -5070,8 +5055,7 @@ formed to position the load along the axis.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/Spring-design/helical-spring-geometry.pdf}
-\caption{\label{fig: helical spring geometry}
-Helical spring geometry and loading conditions.}
+\caption{\label{fig: helical spring geometry}Helical spring geometry and loading conditions.}
 \end{figure}
 
 Regardless of where the cutting plane takes place, equilibrium
@@ -5169,14 +5153,14 @@ determined and formulated as follows.
 $$S_{ut} = \frac{A}{d^m}$$
 
 Special care must be taken when using
-[[\#eqn: spring material strength]\ref{eqn: spring material strength}] in
+\ref{eqn: spring material strength} in
 conjunction with other equations for spring design. The units of
 \(S_{ut}\), \(A\), and \(d\) in the equation are MPa-mm and mm, respectively.
 So they must be converted to their correct units before using in other
 SI-oriented equations presented elsewhere.
 
 The values for \(A\) and exponent \(m\) for various wire materials are shown
-in [[\#table: spring materials]\ref{table: spring materials}].
+in \ref{table: spring materials}.
 
 
  L3cm C2cm C2cm C2cm C2cm C2cm Material \& Diameter (mm) \& G (GPa) \& A
@@ -5222,7 +5206,7 @@ involves grinding and squaring the ends to keep nearly a full turn of
 wire in contact with end plates. These ground/squared coils do not
 contribute to spring flexibility and are not counted as \emph{active coils}.
 The exact numbers for different end conditions are illustrated in
-[[\#table: spring end conditions]\ref{table: spring end conditions}]. Note
+\ref{table: spring end conditions}. Note
 that the range (maximum deflection) of a spring regardless of its end
 type is equal to \(np - nd\).
 
@@ -5243,7 +5227,7 @@ considered for possible buckling. For columns, long and slender ones are
 considered prone to buckling; similar criteria apply to spring--springs
 with large free length and small coil diameter tend to buckle easily.
 Buckling, of course, also depends on exerted axial load and end
-conditions. In [[\#fig: spring buckling]\ref{fig: spring buckling}],
+conditions. In \ref{fig: spring buckling},
 buckling stability of helical compression springs are shown.
 Intuitively, springs with parallel ends are much less prone to buckling
 than those with nonparallel ends. The \$x\$-axis indicates the stability
@@ -5260,13 +5244,14 @@ $$\alpha = \frac{KD}{L_f}$$
 
 is the effective slenderness ratio, equivalent the same quantity for
 column buckling. Table
-[[\#table: spring buckling]\ref{table: spring buckling}] gives the value
+\ref{table: spring buckling} gives the value
 \(K\) for different end conditions. Notice how the values are identical to
 those of column buckling.
 
 
-\begin{center}
+\begin{table}[htbp]
 \label{table: spring buckling}
+\centering
 \begin{tabular}{lr}
 \toprule
 End Condition & Constant \(K\)\\
@@ -5277,7 +5262,7 @@ Both ends pinned & 1\\
 One end clamped; other end free & 2\\
 \bottomrule
 \end{tabular}
-\end{center}
+\end{table}
 
 \begin{figure}[h]
   \centering
@@ -5305,7 +5290,7 @@ One end clamped; other end free & 2\\
   \label{fig: spring buckling}
 \end{figure}
 
-Observe the graph in [[\#fig: spring buckling]\ref{fig: spring buckling}]
+Observe the graph in \ref{fig: spring buckling}
 that both curves appear to have \$x\$-axis asymptotes. These values are
 very important; below these \(L_f/D\) ratios, springs will \emph{not} buckle
 regardless of exerted deflection. For steels, this turns out to be
@@ -5342,9 +5327,9 @@ stress.
 \end{gather}
 
 Applying equations for spring torsional shear
-stress---[[\#eqn: spring torsional stress]\ref{eqn: spring torsional stress}]---and
+stress--\ref{eqn: spring torsional stress}--and
 wire allowable shear
-stress---[[\#eqn: spring allowable stress]\ref{eqn: spring allowable stress}],
+stress--\ref{eqn: spring allowable stress},
 we have
 
 $$\frac{\tau _{allow}}{N_s} = K\frac{8F_sD}{\pi d^3}$$
@@ -5387,7 +5372,7 @@ In general, the stress requirement can be satisfied by many combinations
 of \(D\) and \(d\), and the objective is to find one that best suits the
 requirements of the particular problem. With \(D\) and \(d\) tentatively
 selected, \(N_a\) is then determined on the basis of the required spring
-rate using [[\#eqn: spring constant]\ref{eqn: spring constant}].
+rate using \ref{eqn: spring constant}.
 
 $$N_a = \frac{Gd^4}{8D^3k} = \frac{Gd}{8C^3k}$$
 
@@ -5399,7 +5384,7 @@ out too large or too heavy, a stronger material must be considered.
 
 The process of helical compression spring design can be summarized by a
 process flowchart illustrated in
-[[\#fig: spring design flowchart]\ref{fig: spring design flowchart}]
+\ref{fig: spring design flowchart}
 
 \begin{figure}[h]
   \centering
@@ -5753,7 +5738,7 @@ apply.
 The critical stresses in an extension spring often occur in the end
 hooks. There are typically two locations where the stresses are the
 highest, as shown in
-[[\#fig: stress in extension spring hooks]\ref{fig: stress in extension spring hooks}].
+\ref{fig: stress in extension spring hooks}.
 The bending stress in section A and torsional stress in section B can be
 written as
 
@@ -5873,7 +5858,7 @@ $$N_a = \frac{Gd}{8C^3k} = \frac{79.3 \times 10^9(5.5 \times 10^{-3})}{8(8^3)(70
 Beams springs (commonly fabricated as multileaf springs) are usually
 arranged as cantilevers and simply supported beams in the form of a
 quarter, half, or full ellipse as shown in
-[[\#fig: leaf springs]\ref{fig: leaf springs}]. These are also called flat
+\ref{fig: leaf springs}. These are also called flat
 springs, though they typically have some curvature when unloaded. Note
 that in each case, the basic element is a cantilever of length \(L\)
 loaded by force \(F\). The common semielliptic spring can be thought of as
@@ -5986,8 +5971,7 @@ the spring.
 
 \section{Torsion Springs}
 \label{torsion-springs}
-There are two general types of torsion springs: helical and spiral
-([[\#fig: spiral and helical springs]\ref{fig: spiral and helical springs}]).
+There are two general types of torsion springs: helical and spiral (\ref{fig: spiral and helical springs}).
 The primary stress in all torsion springs is bending, since the load is
 usually applied perpendicular to the wire and causing it to bend.
 
@@ -6009,7 +5993,7 @@ stress in on the inside of the wire and is equal to
 
 $$\sigma_i = \frac{K_iMc}{I}$$
 
-where \(K_i\) is given in [[\#fig: torsion spring stress conc]\ref{fig: torsion spring stress conc}] for various cross sections used in spring application.
+where \(K_i\) is given in \ref{fig: torsion spring stress conc} for various cross sections used in spring application.
 
 \begin{figure}[h]
   \centering
@@ -6149,8 +6133,10 @@ non-ferrous metals, low-cost carbon dioxide for steels.
 
 
 Contact tube/electrode wire guide (3) Electrode (4) Shielding gas (5)
-Molten weld metal (6) Solidified weld metal (7) Workpiece" by Nathaniel
-C. Sheetz is licensed under CC BY-SA 3.0 Unported
+Molten weld metal (6) Solidified weld metal (7) Workpiece`` by Nathaniel
+\begin{enumerate}
+\item Sheetz is licensed under CC BY-SA 3.0 Unported
+\end{enumerate}
 \url{pictures/Welding/gas-metal-arc-welding}
 
 \item Gas tungsten arc welding (GTAW)
@@ -6179,7 +6165,7 @@ the electrode. The process produces fast, clean welds on ferrous metals.
 It is done on flat workpieces. A mound or line of granular flux is
 deposited on the workpieces in advance of the moving consumable
 electrode. The flux melts to produce a protective molten slag, under
-which the fresh weld is "submerged." The process is commonly used with
+which the fresh weld is ``submerged.'' The process is commonly used with
 thick sections requiring deep weld penetration.
 \end{enumerate}
 
@@ -6216,8 +6202,7 @@ into a single and homogenous member. Properties of the welding rod
 
 Welding electrode material strength and ductility specifications have
 been standardized by the American Welding Society (AWS). The properties
-are listed in
-[[\#table: electrode properties]\ref{table: electrode properties}].
+are listed in \ref{table: electrode properties}.
 
 
  L3cm C3cm C3cm C3cm AWS Electrode Number \& Tensile Strength (MPa) \&
@@ -6399,7 +6384,7 @@ bottom welds. The normal bending stress is
 $$\sigma  = \frac{My}{I} = \frac{P(1)(0.06)}{I} = 0.06\frac{P}{I}$$
 
 The welds' moment of inertia is given by
-[[\#eqn: weld group moment of inertia]\ref{eqn: weld group moment of inertia}].
+\ref{eqn: weld group moment of inertia}.
 
 $$\begin{gathered}
       I_y = 2\left( \frac{LH^3}{12} + LHa^2 \right) \\ 
@@ -6545,7 +6530,7 @@ such cases, the same methodology applied to design of symmetrical joints
 is still applicable, but we must be cautious and do not assume any
 symmetry in the direction or magnitude of a stress or load. Since the
 welds are not symmetric, the center of weld will likely not be in the
-"middle." As such, critical point analysis must be done more carefully.
+``middle.'' As such, critical point analysis must be done more carefully.
 
 The weld dimensions and load are given in the figure.
 
@@ -6656,7 +6641,7 @@ the weld bead. In fact, to increase fatigue strength, the weld bead
 should be ground to flush with the plates. Approximate fatigue stress
 concentration factors associated with butt weld reinforcement and other
 weld geometries are given in
-[[\#table: fatigue stress concentration factor]\ref{table: fatigue stress concentration factor}].
+\ref{table: fatigue stress concentration factor}.
 
 
  L10cm C2cm Type of Weld \& \$K\textsubscript{f}\$\\
@@ -6769,7 +6754,7 @@ illustrated.
 \section{Thread forms, terminology, and standards}
 \label{thread-forms-terminology-and-standards}
 The basic arrangement of a helical thread wound around a cylinder are
-illustrated in [[\#fig: bolt terms]\ref{fig: bolt terms}]. Pitch, lead, and
+illustrated in  \ref{fig: bolt terms}. Pitch, lead, and
 lead angle are defined by the illustrations. Virtually all bolts and
 screws have a single thread, but power screws sometimes have double,
 triple, or even quadruple threads.
@@ -6778,14 +6763,13 @@ triple, or even quadruple threads.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/Bolt/bolt-terminology.pdf}
-\caption{\label{fig: bolt terms}
-Terminology of screw threads.}
+\caption{\label{fig: bolt terms}Terminology of screw threads.}
 \end{figure}
 
 shows the standard geometry of screw threads used on fasteners. This is
 essentially the same for both \emph{Unified} (inch series) and \emph{ISO} (metric)
 threads. Standard sizes for the two systems given in
-[[\#table: ISO Screw Dimensions]\ref{table: ISO Screw Dimensions}] show
+\ref{table: ISO Screw Dimensions} show
 both the \emph{fine thread} (UNF, Unified National Fine) and \emph{coarse thread}
 (UNC, Unified National Coarse) series. The pitch diameter, \(d_p\), is the
 diameter of a cylinder on a perfect thread where the width of the thread
@@ -6882,8 +6866,7 @@ on each thread is
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{pictures/Bolt/force-flow-bolt.pdf}
-\caption{\label{fig: force flow in bolt}
-Force flow in a bolt in tension \cite{juvinall2006fundamentals}}
+\caption{\label{fig: force flow in bolt}Force flow in a bolt in tension \cite{juvinall2006fundamentals}}
 \end{figure}
 
 $$\sigma  = \frac{4P}{\pi (d^2 - d_r^2)}\frac{p}{t}$$
@@ -6900,7 +6883,7 @@ closer to the clamped members will carry higher loads and stresses.
 \label{thread-shear-stripping-stress-and-nut-thickness-requirement}
 Nut or bolt threads can be stripped along its cylindrical surface under
 sufficient overload. From the thread geometry shown in
-[[\#fig: force flow in bolt]\ref{fig: force flow in bolt}] the shear area
+\ref{fig: force flow in bolt} the shear area
 is equal to \(\pi d(0.75t)\), where \(d\) is the diameter of the shear
 fracture surface involved.
 
@@ -6961,8 +6944,7 @@ Materials for screws, nuts, and bolts are normally selected based on
 strength, weight, corrosion resistance, magnetic properties, life
 expectancy, and cost. Most fasteners are made from steel of
 specifications standardized by the Society of Automotive Engineers and
-summarized in
-[[\#table: SAE grade properties]\ref{table: SAE grade properties}].
+summarized in \ref{table: SAE grade properties}.
 
  L1.5cm C1.8cm C1.8cm C1.8cm C1.8cm C1.8cm C1.8cm SAE Class \& Diameter
 \(d\) (mm) \& Proof Strength \(S_p\) (MPa) \& Yield Strength \(S_y\) (MPa) \&
@@ -7007,7 +6989,7 @@ protection and to reduce thread friction and wear.
 \label{bolt-tightening-and-initial-tension}
 For most applications, screws and nut-bolt assemblies should ideally be
 tightened to produce an initial tensile force \(F_i\) nearly equal to the
-full "proof load," which is defined as the maximum tensile force that
+full ``proof load,'' which is defined as the maximum tensile force that
 does not produce a normally measurable permanent set. On this basis,
 initial tensions are commonly specified in accordance with the equation
 
@@ -7048,8 +7030,7 @@ Summing axial forces gives
 $$w + n(f\sin \lambda  - \cos \alpha_n\cos \lambda ) = 0$$
 
 Combining
-[[\#eqn: sum bolt tangent force]\ref{eqn: sum bolt tangent force}] and
-[[\#eqn: sum bolt axial force]\ref{eqn: sum bolt axial force}] gives
+\ref{eqn: sum bolt tangent force} and \ref{eqn: sum bolt axial force} gives
 
 $$q = w\frac{f\cos \lambda + \cos \alpha_n\sin \lambda }{\cos \alpha_n\cos \lambda  - f\sin \lambda }$$
 
@@ -7083,7 +7064,7 @@ $$T = \frac{Wd_m}{2}\frac{f\pi d_m - L\cos \alpha_n}{\pi d_m\cos \alpha_n + fL} 
 
 An equation relating tightening torque to initial tension can be
 obtained from
-[[\#eqn: required bolt tightening torque]\ref{eqn: required bolt tightening torque}]
+\ref{eqn: required bolt tightening torque}
 by substituting the both coefficients of friction with 0.15 as a rough
 estimate. For standard screw threads, we have
 
@@ -7100,7 +7081,7 @@ themselves. Under static conditions, a self-locking screw is one that
 requires a positive torque to lower then load, and an overhauling screw
 is one that has low enough friction to enable the load to lower itself.
 If collar friction can be neglected,
-[[\#eqn: thread locking]\ref{eqn: thread locking}] for \(T \geqslant 0\)
+\ref{eqn: thread locking} for \(T \geqslant 0\)
 shows that a screw is self-locking if
 
 $$f \geqslant \frac{L\cos \alpha_n}{\pi d_m}$$
@@ -7192,7 +7173,7 @@ $$\begin{gathered}
   k = \frac{EA}{L} \hfill \\ 
 \end{gathered}$$
 
-Rewriting [[\#eqn: 2-member compound bar]\ref{eqn: 2-member compound bar}]
+Rewriting \ref{eqn: 2-member compound bar}
 using stiffnesses of the bolt \(k_b\) and of the clamped parts \(k_j\), the
 new expression becomes
 
@@ -7278,7 +7259,7 @@ $$\begin{aligned}
   d_3 &= d_2 + L \tan 30^{\circ} \end{aligned}$$
 
 Substitute these value in
-[[\#eqn: clamped parts area]\ref{eqn: clamped parts area}] gives
+\ref{eqn: clamped parts area} gives
 
 \begin{align}
 \label{eqn: clamped parts area approx}
@@ -7299,7 +7280,7 @@ GPa and \(E_{steel}\) = 210 GPa.
 
 First, start by determining the bolt stiffness. An M8 bolt obviously has
 the diameter of 8 mm. We will assume that the bolt is threaded all the
-way through. Utilizing [[\#eqn: bolt stiffness]\ref{eqn: bolt stiffness}],
+way through. Utilizing \ref{eqn: bolt stiffness},
 we have
 
 $$\begin{aligned}
@@ -7310,7 +7291,7 @@ $$\begin{aligned}
 
 To evaluate the clamped parts stiffness, we must determine their
 effective cross-sectional area first. Using
-[[\#eqn: clamped parts area approx]\ref{eqn: clamped parts area approx}],
+\ref{eqn: clamped parts area approx},
 we have that
 
 $$\begin{aligned}
@@ -7357,7 +7338,7 @@ tensile loads. In tension joints, the preload in the bolts directly
 combat the external tensile loads.
 
 From the bolt-joint stiffness interaction
-[[\#eqn: bolt-joint interaction]\ref{eqn: bolt-joint interaction}], it is
+\ref{eqn: bolt-joint interaction}, it is
 clear that preload plays a crucial role in maintaining the integrity of
 a bolted joint. By keeping the clamped parts intact, the bolted joint
 distribute a small fraction of external load to the bolt, while the main
@@ -7462,8 +7443,7 @@ $$\begin{aligned}
         &= 8.89 \times 10^{-6} \text{ m}^2 = 8.89 \text{ mm}^2
   \end{aligned}$$
 
-Looking back at
-[[\#table: ISO Screw Dimensions]\ref{table: ISO Screw Dimensions}], this
+Looking back at \ref{table: ISO Screw Dimensions}, this
 calls for an M5\$\texttimes{}\$0.8 bolt.
 
 Now, let us consider the joint as a friction joint, the vertical
@@ -7628,7 +7608,7 @@ It is important to recognize that small amount of thread root yielding
 occurs when bolts are tightened to the full proof load is not harmful.
 
 \subsection{Bolt sizing for a flange joint under fatigue loading}
-\label{sec:org85740d8}
+\label{sec:org3517145}
 
 Using the same cylindrical pressure vessel from
 but the vessel is pressurized and depressurized repeatedly between 0 and
@@ -7738,7 +7718,7 @@ member stiffness, and fatigue loads are considered as well.
 
 [lab:\arabic{chapter}.\arabic{exercisesi}]
 [exercise: bolt for bicycle fork] A bicycle has dimensions shown in
-[[\#fig: bicycle dimension for exercise]\ref{fig: bicycle dimension for exercise}].
+\ref{fig: bicycle dimension for exercise}.
 You would like to modify it for off-road riding by replacing the screws
 holding the wheels to the forks (front and rear). Since this is going to
 become an off-road bike, design the bolt so that the maximum loads on
@@ -7948,7 +7928,7 @@ is 800 N, which is the maximum weight that this scale can measure.
 \section{Design of a Bicycle Tire Pump}
 \label{design-of-a-bicycle-tire-pump}
     Consider a bicycle tire pump as shown in
-[[\#fig: bike pump]\ref{fig: bike pump}]. It is operated by pushing
+\ref{fig: bike pump}. It is operated by pushing
 straight down on the handle attached on the top of a shaft. A piston
 attached on the other end of the shaft moves down, compressing and
 forcing air in the chamber through the tube into a bicycle tire.
@@ -8198,7 +8178,7 @@ $$\begin{gathered}
 \end{gathered}$$
 
 According to
-[[\#eqn: critical stresses in end hook]\ref{eqn: critical stresses in end hook}],
+\ref{eqn: critical stresses in end hook},
 \(r_1 = D / 2\), \(r_3 = (D - d) / 2\). Let us also assume that
 \(r_4 = D / 3\), which gives \(r_2 = D / 3 - d / 2\). For a relatively low
 stiffness spring, we will assume that the spring index \(C\) = 8, which
@@ -8359,7 +8339,7 @@ following requirements to Engineering team.
 
 \begin{enumerate}
 \item The length of the components should be as illustrated in
-[[\#fig1]\ref{fig1}].
+\ref{fig1}.
 
 \item The handle should be a hollow tube, and to provide proper grip, the
 outer diameter of the tube should be 3 cm. The material for the
@@ -8369,15 +8349,15 @@ and \(S_{ut}\) = 300 MPa.
 \item The spring should be made of chrome-vanadium with a wire diameter \(d\)
 of 8 mm. Its free length is 50 cm, and when a 80-kg user on the pogo
 stick land on the floor from a 1-m high jump, the spring should
-contract by 20 cm, as shown in [[\#fig4]\ref{fig4}].
+contract by 20 cm, as shown in \ref{fig4}.
 
-\item The top of the piston is held in place by a bolt ([[\#fig2]\ref{fig2}]),
+\item The top of the piston is held in place by a bolt (\ref{fig2}),
 which clamps it between the two columns. The coefficient of friction
 \(\mu\) between the surfaces is 0.25.
 
 \item When the maximum load is applied (downward forces of 300 N on each
 end of the handle bar, and the downward forces of 600 N on each end
-of the pedal) as shown in [[\#fig3]\ref{fig3}], all load bearing
+of the pedal) as shown in \ref{fig3}, all load bearing
 components (handle and bolted joint) should have the safety factor of
 2.5, while the spring should have a safety factor of 1.25.
 \end{enumerate}
@@ -8402,7 +8382,7 @@ parameters not given by the marketing team.
 \begin{enumerate}
 \item A bicycle has dimensions shown in
 \end{enumerate}
-[[\#fig: bike-example]\ref{fig: bike-example}]. Your task is modify it for
+\ref{fig: bike-example}. Your task is modify it for
 off-road riding by
 
 \begin{enumerate}
@@ -8452,7 +8432,7 @@ Analysis of a Simplified Fruit Juice Press
 A fruit juice press, used to press juice out of fruits like apple,
 orange, or lime, typically consists of a stand, a lever, and a press.
 The simplified schematic drawing of the press is shown in
-[[\#fig: fruit juicer]\ref{fig: fruit juicer}].
+\ref{fig: fruit juicer}.
 
 
 \url{pictures/Machine-interaction/fruit-juicer}
@@ -8709,7 +8689,7 @@ displacements, we have
   F_2 = \frac{\partial U}{\partial u_2} = \frac{AE}{L}\left( -u_1 + u_2 \right) \hfill \\ 
 \end{gather}
 
-The stiffness matrix derived from [[\#eqn: stiffness matrix energy]\ref{eqn: stiffness matrix energy}] is the same as those given in [[\#eqn: stiffness matrix equilibrium]\ref{eqn: stiffness matrix equilibrium}].
+The stiffness matrix derived from \ref{eqn: stiffness matrix energy} is the same as those given in \ref{eqn: stiffness matrix equilibrium}.
 
 \section{Beam Elements}
 \label{beam-elements}
@@ -8789,9 +8769,9 @@ Deriving the inverse of the preceding matrix multiplication yields
 \end{gather*}
 
 Substitute
-[[\#eqn: inverse displacement matrix]\ref{eqn: inverse displacement matrix}]
+\ref{eqn: inverse displacement matrix}
 into
-[[\#eqn: beam element displacement function]\ref{eqn: beam element displacement function}]
+\ref{eqn: beam element displacement function}
 gives
 
 $$v = v_1 + x\theta_1 - \frac{3x^2}{L}v_1 - \frac{2x^2}{L^2}\theta_1 + \frac{3x^2}{L^2}v_2 - \frac{x^2}{L}\theta_2 + \frac{2x^3}{L^3}v_1 + \frac{x^3}{L^2}\theta_1 - \frac{2x^3}{L^3}v_2 + \frac{x^3}{L^2}\theta_2$$
@@ -8799,7 +8779,7 @@ $$v = v_1 + x\theta_1 - \frac{3x^2}{L}v_1 - \frac{2x^2}{L^2}\theta_1 + \frac{3x^
 We also know that the bending moment \(M\) and shear force \(V\) in an
 elastic beam with symmetrical cross section about the plane of loading
 are related to the displacement function \(v\) by
-[[\#eqn: shear force and load intensity]\ref{eqn: shear force and load intensity}]
+\ref{eqn: shear force and load intensity}
 as
 
 $$\begin{gathered}
@@ -9100,8 +9080,9 @@ Explain the reason behind the trend.
 \appendix
 \chapter{Properties Structural Steel Sections}
 \label{appendix: structural steel properties}
-\begin{center}
+\begin{table}[htbp]
 \label{table: s-shaped sections}
+\centering
 \begin{tabular}{lrrrrrrr}
 \toprule
  &  & \(I\) & \(S\) & \(r_g\) & \(I\) & \(S\) & \(r_g\)\\
@@ -9128,7 +9109,7 @@ S100 \(\times\) 14.1 & 1800 & 2.81 & 55.4 & 39.6 & 0.369 & 10.4 & 14.3\\
 S100 \(\times\) 11.5 & 1460 & 2.52 & 49.7 & 41.7 & 0.311 & 9.21 & 14.6\\
 \bottomrule
 \end{tabular}
-\end{center}
+\end{table}
 
 \begin{center}
 \begin{tabular}{lrrrrrrr}
