@@ -16,5 +16,89 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{ashby2010materials}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4de59c3184c0ba1bad5f8cfefb68f6f5}{%
+           family={Ashby},
+           familyi={A\bibinitperiod},
+           given={Michael\bibnamedelima F},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{fullhash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{bibnamehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{authorbibnamehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{authornamehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{authorfullhash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Materials Selection in Mechanical Design}
+      \field{year}{2010}
+    \endentry
+    \entry{datsko1977materials}{book}{}
+      \name{author}{1}{}{%
+        {{hash=25415021c7a2da5e2edfd65723a9a7cb}{%
+           family={Datsko},
+           familyi={D\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Malloy: Ann Arbor, MI}%
+      }
+      \strng{namehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{fullhash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{bibnamehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{authorbibnamehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{authornamehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{authorfullhash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Materials in design and manufacturing}
+      \field{year}{1977}
+    \endentry
+    \entry{juvinall2006fundamentals}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f7999c00181cdb40571abdacdd931e0e}{%
+           family={Juvinall},
+           familyi={J\bibinitperiod},
+           given={Robert\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=de3aa1d9794faa73eda5de7e673dcbf1}{%
+           family={Marshek},
+           familyi={M\bibinitperiod},
+           given={Kurt\bibnamedelima M},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley New York}%
+      }
+      \strng{namehash}{203e28f0975f7582ea1d1a96baedc47b}
+      \strng{fullhash}{203e28f0975f7582ea1d1a96baedc47b}
+      \strng{bibnamehash}{203e28f0975f7582ea1d1a96baedc47b}
+      \strng{authorbibnamehash}{203e28f0975f7582ea1d1a96baedc47b}
+      \strng{authornamehash}{203e28f0975f7582ea1d1a96baedc47b}
+      \strng{authorfullhash}{203e28f0975f7582ea1d1a96baedc47b}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fundamentals of machine component design}
+      \field{volume}{1}
+      \field{year}{2018}
+    \endentry
+  \enddatalist
+  \missing{secondaryscience4all}
+\endrefsection
 \endinput
 

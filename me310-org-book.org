@@ -4,9 +4,10 @@
 #+OPTIONS: title:nil toc:nil H:4
 
 #+LATEX_COMPILER: xelatex
-#+LATEX_CLASS: book
-#+LATEX_CLASS_OPTIONS: [a4paper,openany,12pt]
+#+LATEX_CLASS: tufte-book
+#+LATEX_CLASS_OPTIONS: [a4paper,openany,nobib]
 #+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \setcounter{tocdepth}{1}
 #+LATEX_HEADER: \usepackage{polyglossia}
 #+LATEX_HEADER: \setdefaultlanguage{thai}
 #+LATEX_HEADER: \setotherlanguage{english}
@@ -18,19 +19,20 @@
 #+LATEX_HEADER: \usepackage[margin=1in]{geometry}
 #+LATEX_HEADER: \XeTeXlinebreaklocale "th_TH"
 #+LATEX_HEADER: \XeTeXlinebreakskip = 0pt plus 1pt
-#+LATEX_HEADER: \setmainfont[Ligatures=TeX]{TH Sarabun New}
-#+LATEX_HEADER: \newfontfamily\thaifont[Scale=1.23]{TH Sarabun New}
-#+LATEX_HEADER: \usepackage[parfill]{parskip}
+#+LATEX_HEADER: \setmainfont{Laksaman}
+#+LATEX_HEADER: \newfontfamily{\thaifont}[Scale=1,Script=Thai]{Laksaman}
 #+LATEX_HEADER: \usepackage{booktabs}
 #+LATEX_HEADER: \usepackage{array}
 #+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \renewcommand{\smallcaps}[1]{\thaifont #1}
 #+LATEX_HEADER: \usetikzlibrary{arrows,calc,decorations,shapes,shapes.arrows,shapes.misc,positioning,decorations.pathmorphing,patterns}
 #+LATEX_HEADER: \usepackage[american]{circuitikz}
 #+LATEX_HEADER: \usepackage{pgfplots}
-#+LATEX_HEADER: \pgfplotsset{compat=1.16} 
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{siunitx}
 #+LATEX_HEADER: \hypersetup{colorlinks=true, linkcolor=blue}
+
+#+BIBLIOGRAPHY: me310.bib
 
 # \frontmatter
   \begin{titlepage}
@@ -120,24 +122,19 @@ Added Chapters 10 and 11. Added exercises in Chapters 6 - 11.
 
 **** February 2017
 
-Migrated to \LaTeX from Microsoft Word. Added original graphics for
+Migrated to \LaTeX{} from Microsoft Word. Added original graphics for
 Chapters 3 - 10.
 
-
 \tableofcontents
+
 \listoffigures
+
 \listoftables
-# \mainmatter
+
+\mainmatter
 * ทบทวนเตรียมความพร้อม
-  :PROPERTIES:
-  :CUSTOM_ID: the-preparations
-  :END:
 
 ** การออกแบบทางวิศวกรรมเบื้องต้น
-   :PROPERTIES:
-   :CUSTOM_ID: introduction-to-engineering-design
-   :END:
-
    การออกแบบทางวิศวกรรมเป็นการประยุกต์ศาสตร์ทางวิศวกรรมเพื่อกำหนดโครงสร้างหรือระบบหนึ่งๆอย่างละเอียดเพื่อให้สามารถนำไปสร้างได้จริง ในส่วนของของวิศวกรเครื่องกล หน้าที่ของเราในการออกแบบคือกำหนดหาวัสดุ ขนาด และรูปร่างของชิ้นส่วนที่เหมาะสมเพื่อที่ชิ้นส่วนนั้นจะสามารถทำงานและรับภาระได้อย่างที่ต้องการ
 
    การออกแบบที่ดีจะต้องคำนึงคำนึงถึงสมรรถนะ ต้นทุน และความปลอดภัยของชิ้นส่วน การออกแบบที่เหมาะสมที่สุดต้องเป็นทางเลือกที่ดีที่สุดซึ่งยังตอบโจทย์ข้อจำกัดทุกข้อ ซึ่งทางเลือกที่ดีที่สุดอาจจะหมายถึงน้ำหนักน้อยที่สุด ปริมาตรต่ำที่สุด หรือราคาต้นทุทถูกที่สุด เป็นต้น ซึ่งกระบวนการออกแบบโดยทั่วไปมีขั้นตอนหลักๆดังนี้
@@ -169,10 +166,13 @@ constraints. In design problems, there are usually more than one right
 answer. Design considerations often require a trial-and-error process,
 as illustrated by [[fig: engineering design processes]]
 
-
-#+CAPTION: Flowchart of typical engineering design processes
+#+CAPTION: กระบวนการออกแบบชิ้นส่วนเครื่องกล
 #+NAME: fig: engineering design processes
-[[fig: engineering design processes][file:pictures/intro-eng-design/eng-design-process.pdf]]
+\begin{marginfigure}
+  \centering
+  \includegraphics[width=\textwidth]{pictures/intro-eng-design/eng-design-process}
+\end{marginfigure}
+
 Product realization and production involve multiple, recursive, and
 sometimes, concurrent processes. There are also many possible backward
 loops where corrections need to be made in earlier stages of design. For
@@ -254,9 +254,8 @@ these laws nice and trimmed will be very time consuming without proper
 equipment. In the olden days, we may have two main options: a pair of
 grass shears (scissors) or a lawn mower.
 
-
-[[file:pictures/intro-eng-design/grass-shears]]
-[[file:pictures/intro-eng-design/lawn-mower]]
+[[file:pictures/intro-eng-design/grass-shears.jpg]]
+file:pictures/intro-eng-design/lawn-mower.jpg
 
 Now, each does have its own strength and weaknesses. Shears are very
 portable, but very slow. Mower, on the other hand, is very fast, but
@@ -281,8 +280,7 @@ much smaller centrifugal load and weight.
 
 The final product is this.
 
-
-[[file:pictures/intro-eng-design/cutter-wire]]
+[[file:pictures/intro-eng-design/cutter-wire.jpg]]
 
 There are plenty of additional benefits to switching to wire cutting.
 Wires don't send rocks, pebbles, or dirt flying. Lighter cutting
@@ -407,7 +405,7 @@ based on yield strength.
 
 #+CAPTION: ตารางแสดงค่าความปลอดภัยแนะนำสำหรับวัสดุ ลักษณะการใช้งาน และลักษณะภาระ
 #+NAME: table: safety factor guideline
-#+ATTR_LATEX: :booktabs t
+#+ATTR_LATEX: :booktabs t :align p{6cm}p{3cm}
 |------------------------------------------------------------------------------+--------------------------------------|
 | ลักษณะชิ้นงาน การใช้งาน และภาระ                                                  | $N_s$                                |
 |------------------------------------------------------------------------------+--------------------------------------|
@@ -421,12 +419,11 @@ based on yield strength.
 | Brittle materials (safety factor based on ultimate strength)                 | Double the safety factor             |
 |------------------------------------------------------------------------------+--------------------------------------|
 
-Safety factor for a training bicycle for toddlers
+**** Safety factor for a training bicycle for toddlers
 
 We want to approximate a proper safety factor for a bicycle for toddlers
 (small children). Let us take a balance bike as shown in the figure
 below as an example.
-
 
 [[file:pictures/intro-eng-design/balance-bike.jpg]]
 
@@ -1089,7 +1086,7 @@ metal.
 
 
 #+CAPTION: Different types of engineering composites.
-[[file:pictures/Material-selection/composite-types]]
+[[file:pictures/Material-selection/composite-types.jpg]]
 
 As common examples, engineering composites are combinations of strong
 fibers such as glass, carbon, and boron bonded together in a material
@@ -1239,9 +1236,8 @@ engineering composites, engineering polymers, woods, and polymer foams
 having decreased values
 
 
-#+CAPTION: Material strength, $S$, versus modulus, $E$, chart.
-\cite{ashby2010materials}
-[[file:pictures/Material-selection/strength-stiffness-diagram]]
+#+CAPTION: Material strength, $S$, versus modulus, $E$, chart. \cite{ashby2010materials}
+[[file:pictures/Material-selection/strength-stiffness-diagram.png]]
 
 ***** Strength-Density Chart
       :PROPERTIES:
@@ -1256,7 +1252,7 @@ and plates, respectively can be determined.
 
 #+CAPTION: Material strength, $S$, versus density, $\rho$, chart. \cite{ashby2010materials}
 #+NAME: fig: strength density diagram
-[[file:pictures/Material-selection/strength-density-diagram]]
+[[file:pictures/Material-selection/strength-density-diagram.pdf]]
 
 ***** Strength-Temperature Chart
       :PROPERTIES:
@@ -1489,7 +1485,7 @@ stress components.
 
 #+CAPTION: Stresses on a three-dimensional element when considering a static equilibrium
 #+NAME: fig: 3d-stress-element
-[[file:pictures/Static-body-load-analysis/3d-element-stress]]
+[[file:pictures/Static-body-load-analysis/3d-element-stress.pdf]]
 
 ***** Normal Stress Components
       :PROPERTIES:
@@ -1579,7 +1575,7 @@ $\gamma_{xy}$, can be defined as
 
 
 #+CAPTION: 3-dimensional element under shear deformation.
-[[file:pictures/Static-body-load-analysis/3d-shear-deformation]]
+[[file:pictures/Static-body-load-analysis/3d-shear-deformation.pdf]]
 
 $$\gamma _{xy} = \mathop {\lim }\limits_{y \to 0} \frac{dx}{y} = \tan \theta  \approx \theta$$
 
@@ -3024,11 +3020,13 @@ $$\begin{aligned}
              &= 31.8 \text{ MPa}
   \end{aligned}$$
 
-For bending, we have $$\begin{aligned}
+For bending, we have
+
+\begin{aligned}
     \sigma_b &= \frac{My}{I} \\
              &= \frac{1000(1)(0.01)}{4 \dfrac{\pi}{4}(0.01)^4} \\
              &= 318 \text{ MPa}
-  \end{aligned}$$
+\end{aligned}
 
 As mentioned earlier, the directions of both of these stresses are along
 the length of the shaft, so we can add them up, giving the final state
@@ -3080,12 +3078,12 @@ static loads.
 
 #+CAPTION: Stress concentration of a grooved shaft under bending
 \cite{juvinall2006fundamentals}
-[[file:pictures/Static-body-load-analysis/stress-conc-grooved-shaft]]
+[[file:pictures/Static-body-load-analysis/stress-conc-grooved-shaft.png]]
 
 
 #+CAPTION: Stress concentration factor of a shaft with shoulder fillet
 under axial loading \cite{juvinall2006fundamentals}
-[[file:pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet]]
+[[file:pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet.png]]
 
 Determine the maximum load this multi-segment cantilever beam can take
 given that the beam material has $\sigma_{allow}$ = 150 MPa.
@@ -3094,7 +3092,7 @@ given that the beam material has $\sigma_{allow}$ = 150 MPa.
 Use the following diagram for stress concentration factor.
 
 
-[[file:pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet-bending]]
+[[file:pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet-bending.png]]
 
 We must determine the stress at each candidate for critical point,
 modified by its corresponding stress concentration factor, leading to
@@ -3143,7 +3141,7 @@ the corner of a forward escape hatch. The figure below illustrated the
 location and geometry of the hatch.
 
 
-[[file:pictures/Static-body-load-analysis/de-havilland-analysis]]
+[[file:pictures/Static-body-load-analysis/de-havilland-analysis.jpg]]
 
 For simplification, assume the following material properties and
 geometry for the part.
@@ -3165,10 +3163,10 @@ geometry for the part.
 Use the following diagram for stress concentration factors.
 
 
-[[file:pictures/Static-body-load-analysis/stress-conc-bending-plate]]
+[[file:pictures/Static-body-load-analysis/stress-conc-bending-plate.png]]
 
 
-[[file:pictures/Static-body-load-analysis/stress-conc-axial-plate]]
+[[file:pictures/Static-body-load-analysis/stress-conc-axial-plate.png]]
 
 Determine the safety factor of the safety hatch at the corner.
 
@@ -3276,14 +3274,11 @@ material has $G$ = 80 GPa.
 stresses, maximum shear stresses, and principal direction in each of
 these elements
 
-[[file:pictures/Static-body-load-analysis/plane-stress-exercise1]]
-[[file:pictures/Static-body-load-analysis/plane-stress-exercise2]]\\
-[[file:pictures/Static-body-load-analysis/plane-stress-exercise3]]
+[[file:pictures/Static-body-load-analysis/plane-stress-exercise1.pdf]]
+[[file:pictures/Static-body-load-analysis/plane-stress-exercise2.pdf]]\\
+[[file:pictures/Static-body-load-analysis/plane-stress-exercise3.pdf]]
 
 ** ทฤษฎีการล้มเหลวเบื้องต้น
-   :PROPERTIES:
-   :CUSTOM_ID: introduction-to-theories-of-failure
-   :END:
 
 Material failures occur when solid materials lose their strength due to
 external loads. In this section, we will discuss theories that predict
@@ -3295,9 +3290,6 @@ must also be able to apply the appropriate theory to the appropriate
 situation.
 
 *** Yield and Fracture
-    :PROPERTIES:
-    :CUSTOM_ID: yield-and-fracture
-    :END:
 
 In uniaxial state of stress, the material behavior during yield is
 relatively simple and can be explained by yield stress criteria.
@@ -3306,14 +3298,7 @@ multiaxial state of stress. The study of the materials that yield is
 known as plasticity theory. We only limit ourselves to the first third
 of plasticity theory---the prediction of yield initiation.
 
-A yield criterion can be any descriptive statement that defines
-conditions under which yielding will occur. It may be expressed in terms
-of specific quantities, such as stress state, the strain state, a strain
-energy quantity, or others. To develop a yield function, the components
-of the multiaxial stress state are combined into a single quantity known
-as the effective stress . The effective stress is then compared with the
-yield stress , in some appropriate form, to determine if yield has
-occurred.
+A yield criterion can be any descriptive statement that defines conditions under which yielding will occur. It may be expressed in terms of specific quantities, such as stress state, the strain state, a strain energy quantity, or others. To develop a yield function, the components of the multiaxial stress state are combined into a single quantity known as the effective stress . The effective stress is then compared with the yield stress , in some appropriate form, to determine if yield has occurred.
 
 **** Maximum shear stress theory (Tresca criteria)
      :PROPERTIES:
@@ -3806,8 +3791,7 @@ properties. Yield strength = 427 MPa Ultimate tensile strength = 748 MPa
 Modified endurance limit = 300 MPa Determine the suitable diameter of
 the rod. Use Soderberg line with $N_s$ = 3
 
-
-[[file:pictures/Failure-theories/fatigue-example]]
+[[file:pictures/Failure-theories/fatigue-example.pdf]]
 
 The safety factor of a member under alternate loading using the
 Soderberg line is as follows
@@ -3821,12 +3805,14 @@ $$\sigma_a = \frac{(8000 + 0)/2}{\dfrac{\pi }{4}d^2} = \frac{16000}{\pi d^2}$$
 
 According to the Soderberg relation, we have
 
-$$\begin{gathered}
+\begin{gather}
     \frac{\sigma_m}{S_y} + \frac{\sigma _a}{S_e} = \frac{1}{3} \\ 
     \dfrac{\dfrac{4000}{\dfrac{\pi }{4}d^2}}{427 \times 10^6} + \dfrac{\dfrac{16000}{\pi d^2}}{300 \times 10^6} = \frac{1}{3} \\[1em] 
     d^2 = 6.29 \times 10^{-5} \hfill \\
     d = 7.9 \times 10^{-3} = 7.9 \text{ mm} \hfill \\ 
-  \end{gathered}$$ Therefore, the rod's diameter must be 7.9 mm.
+\end{gather}
+
+Therefore, the rod's diameter must be 7.9 mm.
 
 *** Buckling
     :PROPERTIES:
@@ -4038,7 +4024,7 @@ will lead to buckling.
 
 
 #+CAPTION: Train track buckling. (US Department of Transportation)
-[[file:pictures/Failure-theories/Rail_buckle]]
+[[file:pictures/Failure-theories/Rail_buckle.jpg]]
 
 Buckling due to thermal load is a combination between two problems:
 buckling and thermal load. Assuming that rail buckling happens on a
@@ -4170,7 +4156,6 @@ manufacture the cans has a yield stress of 100 MPa, what is the
 difference in thickness between your second design and your first design
 $t_2 – t_1$? Note: use maximum distortion energy theory to determine
 failure.
-
 
 * การออกแบบชิ้นส่วน
   :PROPERTIES:
@@ -4352,8 +4337,7 @@ A gantry crane with 3-m span has a maximum load capacity of 3 ton.
 Determine a proper structural steel (S shape) so that the safety factor
 is 3 and the maximum deflection does not exceed 1 cm.
 
-
-[[file:pictures/Simple-load-bearing/gantry-crane]]
+[[file:pictures/Simple-load-bearing/gantry-crane.png]]
 
 In this problem, first of all, we must make sure that the designed beam
 does not fail under the 3-ton load regardless of the weight position on
@@ -4504,7 +4488,7 @@ With all other variables set to constants, $b(x)$ is simply a linear
 function along the beam length, i.e. the beam forms a wedge.
 
 
-[[file:pictures/Simple-load-bearing/fully-stressed-wedge]]
+[[file:pictures/Simple-load-bearing/fully-stressed-wedge.pdf]]
 
 If instead, $b$ is set as a constant, the required thickness of the beam
 is
@@ -4514,7 +4498,7 @@ $$h(x) = \sqrt{\dfrac{6F(x-L)}{b \sigma_{allow}}}$$
 $h$ in this case is a parabola.
 
 
-[[file:pictures/Simple-load-bearing/fully-stressed-parabola]]
+[[file:pictures/Simple-load-bearing/fully-stressed-parabola.pdf]]
 
 *** Shaft Design
     :PROPERTIES:
@@ -9593,7 +9577,10 @@ long 2 $\times$ 5 cm, 2 $\times$ 10 cm, 2 $\times$ 20 cm, and 2 $\times$
 30 cm. Do you notice an increasing or decreasing trend in the errors?
 Explain the reason behind the trend.
 
+\backmatter
+
 \appendix
+
 ** Properties Structural Steel Sections
    :PROPERTIES:
    :CUSTOM_ID: appendix: structural steel properties

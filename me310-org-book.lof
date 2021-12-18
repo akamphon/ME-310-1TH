@@ -4,70 +4,89 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Monomers and repeating polymer units of common polymers.\relax }}{27}{figure.caption.13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Material strength at different temperatures, \(S(T)\), versus temperature, \(T\), chart. \cite {ashby2010materials}\relax }}{34}{figure.caption.14}%
+\contentsline {figure}{\numberline {1}{\ignorespaces กระบวนการออกแบบชิ้นส่วนเครื่องกล\relax }}{17}{figure.0.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A circular bar under torsion. The figure shows the torque and deformation on the cross section.\relax }}{45}{figure.caption.15}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Monomers and repeating polymer units of common polymers.}}{33}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Deformation in pure beam bending.\relax }}{50}{figure.caption.16}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Different types of engineering composites.}}{39}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4}{\ignorespaces Material strength, \(S\), versus modulus, \(E\), chart. \cite {ashby2010materials}}}{42}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 'Safe-zone' diagram for material under maximum distortion energy criterion.\relax }}{77}{figure.caption.17}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Material strength, \(S\), versus density, \(\rho \), chart. \cite {ashby2010materials}}}{43}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 'Safe-zone' diagram for material under maximum principal stress criterion.\relax }}{80}{figure.caption.18}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces `Safe-zone' diagram for material under modified Coulomb-Mohr criterion.\relax }}{81}{figure.caption.19}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Material strength at different temperatures, \(S(T)\), versus temperature, \(T\), chart. \cite {ashby2010materials}}}{44}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Shear and normal stress distributions in a cantilever beam.\relax }}{94}{figure.caption.20}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Stresses on a three-dimensional element when considering a static equilibrium}}{49}{figure.caption.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces a typical luffing crane\relax }}{110}{figure.caption.21}%
+\contentsline {figure}{\numberline {8}{\ignorespaces 3-dimensional element under shear deformation.}}{51}{figure.caption.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces a footbridge\relax }}{113}{figure.caption.22}%
+\contentsline {figure}{\numberline {9}{\ignorespaces A circular bar under torsion. The figure shows the torque and deformation on the cross section.}}{57}{figure.caption.67}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10}{\ignorespaces Deformation in pure beam bending.}}{62}{figure.caption.72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Torsion bar spring suspension system\relax }}{116}{figure.caption.23}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Stress concentration of a grooved shaft under bending}}{82}{figure.caption.85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Helical spring geometry and loading conditions.\relax }}{119}{figure.caption.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Buckling stability of helical springs.\relax }}{124}{figure.caption.26}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Helical spring design process flowchart\relax }}{127}{figure.caption.27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Critical stress locations in extension spring end hooks.\relax }}{135}{figure.caption.28}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces A semi-elliptical leaf spring.\relax }}{137}{figure.caption.29}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Spiral and helical torsion springs.\relax }}{139}{figure.caption.30}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Curvature--stress concentration factor for torsion springs, round and rectangular wires.\relax }}{139}{figure.caption.31}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Stress concentration factor of a shaft with shoulder fillet}}{83}{figure.caption.86}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {13}{\ignorespaces 'Safe-zone' diagram for material under maximum distortion energy criterion.}}{93}{figure.caption.93}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Terminology of screw threads.\relax }}{158}{figure.caption.32}%
+\contentsline {figure}{\numberline {14}{\ignorespaces 'Safe-zone' diagram for material under maximum principal stress criterion.}}{96}{figure.caption.96}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Force flow in a bolt in tension \cite {juvinall2006fundamentals}\relax }}{160}{figure.caption.33}%
+\contentsline {figure}{\numberline {15}{\ignorespaces `Safe-zone' diagram for material under modified Coulomb-Mohr criterion.}}{98}{figure.caption.98}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Exercise\relax }}{180}{figure.caption.34}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Exercise\relax }}{180}{figure.caption.35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Exercise\relax }}{181}{figure.caption.36}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Train track buckling. (US Department of Transportation)}}{106}{figure.caption.106}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces A bicycle tire pump.\relax }}{185}{figure.caption.37}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Shear and normal stress distributions in a cantilever beam.}}{112}{figure.caption.111}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {18}{\ignorespaces a typical luffing crane}}{129}{figure.caption.123}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {19}{\ignorespaces a footbridge}}{133}{figure.caption.126}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {20}{\ignorespaces Torsion bar spring suspension system}}{136}{figure.caption.129}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {21}{\ignorespaces Helical spring geometry and loading conditions.}}{139}{figure.caption.134}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {22}{\ignorespaces Buckling stability of helical springs.}}{144}{figure.caption.140}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {23}{\ignorespaces Helical spring design process flowchart}}{147}{figure.caption.142}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {24}{\ignorespaces Critical stress locations in extension spring end hooks.}}{154}{figure.caption.146}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {25}{\ignorespaces A semi-elliptical leaf spring.}}{156}{figure.caption.148}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {26}{\ignorespaces Spiral and helical torsion springs.}}{159}{figure.caption.150}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {27}{\ignorespaces Curvature--stress concentration factor for torsion springs, round and rectangular wires.}}{159}{figure.caption.151}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {28}{\ignorespaces Terminology of screw threads.}}{177}{figure.caption.171}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {29}{\ignorespaces Force flow in a bolt in tension \cite {juvinall2006fundamentals}}}{179}{figure.caption.177}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {30}{\ignorespaces Exercise}}{199}{figure.caption.195}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {31}{\ignorespaces Exercise}}{199}{figure.caption.196}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {32}{\ignorespaces Exercise}}{200}{figure.caption.197}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {33}{\ignorespaces A bicycle tire pump.}}{204}{figure.caption.202}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\contentsfinish 
