@@ -1,4 +1,4 @@
-% Created 2021-12-18 Sat 23:58
+% Created 2021-12-20 Mon 15:17
 % Intended LaTeX compiler: xelatex
 \documentclass[a4paper,openany,nobib]{tufte-book}
 \usepackage{graphicx}
@@ -43,7 +43,7 @@
  pdftitle={การออกแบบเครื่องกล 1},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 29.0.50 (Org mode 9.6)}, 
+ pdfcreator={Emacs 28.0.90 (Org mode 9.6)}, 
  pdflang={English}}
 \usepackage{biblatex}
 \addbibresource{/home/sup/ME-310-1TH/me310.bib}
@@ -72,8 +72,8 @@
 \restoregeometry
 \pagecolor{White}
 
-\chapter*{คำนำ}
-\label{sec:org1f78582}
+\section*{คำนำ}
+\label{sec:org4d8c84d}
 The materials accumulated herein is intended for use as a reading and
 teaching references for ME 310: Mechanical Design I. The main objective
 of the class is to introduce students to the concepts of mechanical
@@ -106,35 +106,35 @@ design tool.
 \hspace{10cm}
 สัปปินันทน์ เอกอำพน
 
-\chapter*{บันทึกแก้ไข}
-\label{sec:orge6e66cb}
-\section*{July 2014}
-\label{sec:org54eb100}
+\section*{บันทึกแก้ไข}
+\label{sec:orge6a64a0}
+\subsubsection*{July 2014}
+\label{sec:org36713e6}
 
 Initial complete contents of Chapters 1 - 7.
 
-\section*{March 2015}
-\label{sec:orge76da7d}
+\subsubsection*{March 2015}
+\label{sec:org991730c}
 
 Added Chapter 8.
 
-\section*{August 2015}
-\label{sec:orgff342d2}
+\subsubsection*{August 2015}
+\label{sec:org65a3f79}
 
 Added Chapter 9.
 
-\section*{April 2016}
-\label{sec:org6c0c999}
+\subsubsection*{April 2016}
+\label{sec:org44fbe98}
 
 Added Exercises in Chapters 1 - 2.
 
-\section*{September 2016}
-\label{sec:orgf0babaa}
+\subsubsection*{September 2016}
+\label{sec:orgc04a047}
 
 Added Chapters 10 and 11. Added exercises in Chapters 6 - 11.
 
-\section*{February 2017}
-\label{sec:orgdbcc931}
+\subsubsection*{February 2017}
+\label{sec:org9edf93f}
 
 Migrated to \LaTeX{} from Microsoft Word. Added original graphics for
 Chapters 3 - 10.
@@ -146,39 +146,30 @@ Chapters 3 - 10.
 \listoftables
 
 \mainmatter
-\part{ทบทวนเตรียมความพร้อม}
-\label{the-preparations}
-\chapter{การออกแบบทางวิศวกรรมเบื้องต้น}
-\label{introduction-to-engineering-design}
+\chapter{ทบทวนเตรียมความพร้อม}
+\label{sec:org2cfdf7e}
+
+\section{การออกแบบทางวิศวกรรมเบื้องต้น}
+\label{sec:orgaf3fa27}
 การออกแบบทางวิศวกรรมเป็นการประยุกต์ศาสตร์ทางวิศวกรรมเพื่อกำหนดโครงสร้างหรือระบบหนึ่งๆอย่างละเอียดเพื่อให้สามารถนำไปสร้างได้จริง ในส่วนของของวิศวกรเครื่องกล หน้าที่ของเราในการออกแบบคือกำหนดหาวัสดุ ขนาด และรูปร่างของชิ้นส่วนที่เหมาะสมเพื่อที่ชิ้นส่วนนั้นจะสามารถทำงานและรับภาระได้อย่างที่ต้องการ
 
 การออกแบบที่ดีจะต้องคำนึงคำนึงถึงสมรรถนะ ต้นทุน และความปลอดภัยของชิ้นส่วน การออกแบบที่เหมาะสมที่สุดต้องเป็นทางเลือกที่ดีที่สุดซึ่งยังตอบโจทย์ข้อจำกัดทุกข้อ ซึ่งทางเลือกที่ดีที่สุดอาจจะหมายถึงน้ำหนักน้อยที่สุด ปริมาตรต่ำที่สุด หรือราคาต้นทุทถูกที่สุด เป็นต้น ซึ่งกระบวนการออกแบบโดยทั่วไปมีขั้นตอนหลักๆดังนี้
 
 \begin{enumerate}
 \item วิเคราะห์การล้มเหลวแบบต่างๆของชิ้นส่วน
-
 \item หาความสัมพันธ์ระหว่างภาระที่กระทำ ความเค้นลัพธ์ และการเปลี่ยนรูปของวัสดุ
-
-\item Determine the maximum usable value of a significant quantity such as
-stress or deformation that may cause failure. Using this value
-together with equation(s) obtained from part 2 to determine allowable
-loads.
-
-\item Select the safety factor.
+\item วิเคราะห์หาค่าความเค้นและการเปลี่ยยนรูปมากที่สุดที่ชิ้นส่วนควรจะรับได้เพื่อที่เครื่องจักรจะได้ทำหน้าที่ของมัน
+\item เลือกค่าความปลอดภัยที่เหมาะสม
 \end{enumerate}
 
-The preceding procedure must be adjusted to each individual case, as
-certain steps may be unnecessary or obvious. No two design problems are
-exactly the same, and no two design solutions should be the same.
+กระบวนการออกแบบข้างต้นนี้ยังอาจต้องมีการปรับเปลี่ยนให้เหมาะสมกับการออกแบบในแต่ละกรณี บางขั้นตอนอาจไม่มีความจำเป็นหรือชัดเจนมากจรไม่ต้องหาข้อมูลเพิ่ม เนื่องจากการออกแบบในแต่ละกรณีก็ต่างกันไป คำตอบของโจทย์การออกแบบก็ย่อมต่างกันไปเช่นกัน
 
-\section{Engineering Design Processes}
-\label{engineering-design-processes}
-Solutions to design problems start at the very first with the
-recognition of problems or needs for a part, machine, or system. The
-problems or needs are then formulated into sets of requirements and
-constraints. In design problems, there are usually more than one right
-answer. Design considerations often require a trial-and-error process,
-as illustrated by \ref{fig: engineering design processes}
+\subsection{กระบวนการออกแบบทางวิศวกรรม}
+\label{sec:org5d6951d}
+
+แนวทางแก้ไขปัญหาการออกแบบเริ่มด้วยการรับรู้ปัญหาหรือความต้องการชิ้นส่วน เครื่องจักร หรือระบบ แล้วจึงกำหนดปัญหาหรือความต้องการเป็นชุดข้อกำหนดและ
+ข้อจำกัดของสิ่งที่ต้องการจะออกแบบ ในปัญหาการออกแบบ มักจะมีคำตอบที่ถูกมากกว่าหนึ่งข้อ และหลายครั้ง คำตอบที่ได้มาก็มาจากการลองผิดลองถูก
+ตามที่แสดงโดยรูปที่ \ref{fig: engineering design processes}
 
 \begin{marginfigure}
   \centering
@@ -186,14 +177,7 @@ as illustrated by \ref{fig: engineering design processes}
 \caption{\label{fig: engineering design processes}กระบวนการออกแบบชิ้นส่วนเครื่องกล}
 \end{marginfigure}
 
-Product realization and production involve multiple, recursive, and
-sometimes, concurrent processes. There are also many possible backward
-loops where corrections need to be made in earlier stages of design. For
-example, during the prototyping period, it is found that two parts that
-are intended to mate do not fit together because they shrink during
-cooling. It may not be at all possible to change the manufacturing
-processes, in which case the components have to be redesigned to factor
-in the thermal shrinkage.
+การออกแบบผลิตภํณฑ์และการผลิตนั้นต้องกระบวนการที่หลากหลาย ซ้ำครั้ง และบางครั้งก็เกิดขึ้นพร้อมกัน หลายครั้งต้องมีการกลับไปแก้ใหม่ที่กระบวนการต้นๆ ยกตัวอย่างเช่น ในช่วงการผลิตชิ้นส่วนต้นแบบ ได้พบว่ามีชิ้นส่วนที่ประกอบกันไม่ได้เนื่องจากเกิดการหดตัวของวัสดุตอนช่วงที่ปล่อยให้ชิ้นงานเย็นตัวลง ซึ่งอาจเป็นได้ว่าไม่สามารถใช้กระบวนการผลิตอื่นกับชิ้นส่วนนี้ได้ ดังนั้นจะต้องมีการออกแบบใหม่เผื่อการหดตัวของวัสดุนี้เอาไว้ด้วย
 
 In this class, our efforts will be mainly focused on problem
 formulation, conceptual, system, and component design. Design
@@ -250,16 +234,27 @@ coconut meat. The first is to scrape it off the shell, and the second is
 to grind the meat together with the shell. There may be other possible
 methods, but in this example we will only consider these two.
 
- L4.5cm L4.5cm L4.5cm Functional Requirement \&\\
-Design Parameters \& Scraping coconut meat \& Grinding coconut meat\\
-Analysis \& Strength of meat Beam bending \& Strength of shell Grinding
-teeth strength\\
-References \& Mechanics of Material \& Mechanics of Material\\
-Risks \& Broken scraper \& Broken grinder teeth Stuck grinder blade\\
-Countermeasures \& Strong material Safety factor \& Safety factor Allow
-proper clearance\\
+\begin{table*}[htbp]
+\caption{ตาราง FRDPARRC สำหรับการออกแบบเครื่องเตรียมมะพร้าวขูด}
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    Functional Requirement & Scraper & Grinder \\
+    \midrule
+    Design Parameters & Scraping coconut meat & Grinding coconut meat \\
+    Analysis & Strength of meat & Strength of shell \\
+    && Grinding teeth strength \\
+    References & Mechanics of materials & Mechanics of materials \\
+    Risks & Broken scraper & Broken grinder teeth \\
+    && Stuck grinder blade \\
+    Countermeasures & Strong material & Safety factor \\
+    & Safety factor & Allow proper clearance \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
 
-Design of a Lawn Mower
+\subsection{Design of a Lawn Mower}
+\label{sec:org860bb78}
 
 Ahh.. Grass lawn maintenance. Very possibly one of the most budget
 consuming activities in Thailand household landscaping business
@@ -308,7 +303,7 @@ Wires don't send rocks, pebbles, or dirt flying. Lighter cutting
 mechanism also means smaller motor and smaller energy source, further
 reducing the weight of the system.
 
-\section{Safety Factor}
+\subsection{Safety Factor}
 \label{safety-factor}
 Occasionally, it is difficult to determine the numerous factors involved
 in various aspects of analysis and design of structures. A significant
@@ -319,7 +314,7 @@ factors like types of loads, environmental effects, variations in
 material properties, consequences of failure, human safety and
 economics, and other considerations.
 
-\section{Definition of Safety Factor}
+\subsubsection{Definition of Safety Factor}
 \label{definition-of-safety-factor}
 Engineers use a safety factor to ensure against uncertainties involving
 strength and loading. This factor is employed to provide guarantee that
@@ -352,7 +347,7 @@ for a member---one safety factor for each mode of failure. The smallest
 value of safety factor for any component is of the greatest concern
 because it is the most likely mode of failure.
 
-\section{Selection of Safety Factors}
+\subsubsection{Selection of Safety Factors}
 \label{selection-of-safety-factors}
 Choosing an appropriate safety factor to be used for a variety of
 applications is one of the most important engineering tasks. The
@@ -408,7 +403,7 @@ these respects should generally have about the same safety factor,
 and so on.
 \end{enumerate}
 
-\section{Recommended Values for Safety Factors}
+\subsubsection{Recommended Values for Safety Factors}
 \label{recommended-values-for-safety-factors}
 Keep in mind that this is by no means an absolute rule to follow---more
 of a general guideline for safety factor selection. These factors are
@@ -433,13 +428,12 @@ Brittle materials (safety factor based on ultimate strength) & Double the safety
 \end{tabular}
 \end{table}
 
-\section{Safety factor for a training bicycle for toddlers}
-\label{sec:org189fd1f}
+\subsubsection{Safety factor for a training bicycle for toddlers}
+\label{sec:org65be60d}
 
 We want to approximate a proper safety factor for a bicycle for toddlers
 (small children). Let us take a balance bike as shown in the figure
 below as an example.
-
 
 \begin{center}
 \includegraphics[width=.9\linewidth]{pictures/intro-eng-design/balance-bike.jpg}
@@ -457,7 +451,7 @@ simply increase the loading requirement and file this under 'reasonably
 constant conditions.' Combining the two, the safety factor should fall
 between 1.5 - 2.
 
-\section{Summary}
+\subsection{Summary}
 \label{summary}
 Engineering design is a process that combines technical knowledge with
 creativity. It is almost in equal parts science and imagination. Unlike
@@ -482,7 +476,7 @@ sides. To do so, proper calculation techniques and safety factors must
 be incorporated. A good design satisfies all required, nonnegotiable
 constraints while optimizes negotiable ones.
 
-\section{แบบฝึกหัด}
+\subsection{แบบฝึกหัด}
 \label{exercises}
 \begin{enumerate}
 \item Consider the problem of portable personal transportation (transportation options for one passenger). Determine some of the basic required functions. Draw a FRDPARRC sheet of the problem and fill them out for with at least 2 conceptual designs.
@@ -498,7 +492,7 @@ constraints while optimizes negotiable ones.
 
 Elaborate on your reasoning. Think about the materials will you choose for the components and their operating conditions. Factor those into your 'proper' safety factor.
 
-\chapter{การเลือกวัสดุ}
+\section{การเลือกวัสดุ}
 \label{material-selection}
 The selection of materials and the processes used in manufacturing are
 important in the design of any machine component. Strength and stiffness
@@ -522,7 +516,7 @@ ceramics, thermoplastics, and thermoset polymers. Another site
 plastics, composites, elastomers, nonferrous metals, ferrous metals, and
 ceramics.
 
-\section{Cast Iron}
+\subsection{Cast Iron}
 \label{cast-iron}
 Cast iron is a four-element alloy containing iron, carbon, silicon, and
 manganese. Additional alloying elements are sometimes added. The
@@ -541,7 +535,7 @@ hardness level, reduces vibration, and lubricates wearing surfaces. When
 the heat is removed rapidly, most of the carbon at the surface remains
 combined as iron carbides, which are extremely hard and wear-resistant.
 
-\section{Grey Iron}
+\subsection{Grey Iron}
 \label{grey-iron}
 The appearance of gray iron comes from precipitated carbon in the form
 of graphite. Gray iron has good wear resistance. Even stronger
@@ -554,7 +548,7 @@ construction of members under bending.
 Typical applications of gray iron include engine blocks, machine bases
 and frames, gears, flywheels, and brake disks and drums.
 
-\section{Ductile (Nodular) Iron}
+\subsubsection{Ductile (Nodular) Iron}
 \label{ductile-nodular-iron}
 Ductile iron is alloyed with magnesium, which causes excess carbon to
 precipitate in the form of small spheres or nodules. These nodules do
@@ -567,7 +561,7 @@ yield strength (40 ksi), and elongation (18 percent).
 Typical applications include engine crankshafts, heavy-duty gears, and
 hardware items such as automobile door hinges.
 
-\section{White Iron}
+\subsubsection{White Iron}
 \label{white-iron}
 White iron (based on their white appearances of fracture surfaces) is
 produced in outer portion of gray and ductile iron castings by chilling
@@ -579,13 +573,13 @@ Typical applications are found in ball mills, extrusion dies, cement
 mixer liners, railroad brake shoes, rolling mill rolls, crushers, and
 pulverizers.
 
-\section{Malleable Iron}
+\subsubsection{Malleable Iron}
 \label{malleable-iron}
 Typical uses are for heavy-duty parts having bearing surfaces, which are
 needed in trucks, railroad equipment, construction machinery, and farm
 equipment.
 
-\section{Steel}
+\subsection{Steel}
 \label{steel}
 Steel is the most extensively used material for machine components. By
 varying the composition, thermal treatment, and mechanical treatment,
@@ -615,14 +609,14 @@ moderate heat treatment with lower risk from warpage from extreme
 temperatures.
 \end{enumerate}
 
-\section{Plain Carbon Steels}
+\subsubsection{Plain Carbon Steels}
 \label{plain-carbon-steels}
 Plain carbon steels contain only carbon as a significant alloying
 element. Low-carbon steels have less than 0.3 percent carbon,
 medium-carbon steels have 0.3 -- 0.5 percent, and high-carbon steels
 have above 0.5 percent.
 
-\section{Alloy Steels}
+\subsubsection{Alloy Steels}
 \label{alloy-steels}
 As mentioned previously, the basic purpose of adding alloying elements
 to steel is to increase hardenability. represents the results of a study
@@ -646,7 +640,7 @@ Most alloy steels can be classed as either through-hardening (relatively
 penetrative hardening) or carburizing (shallow hardening). The latter is
 useful in the case where a hard surface and tough core is desired.
 
-\section{HSLA Steels}
+\subsubsection{HSLA Steels}
 \label{hsla-steels}
 High-strength low-alloy (HSLA) steels were first developed as a class of
 relatively low-cost steels providing much of the advantage of more
@@ -655,7 +649,7 @@ strength compared to plain carbon steel allows a considerable weight
 reduction with relatively small increase in total cost of the part.
 Their main use nowadays still remains in the automotive industry.
 
-\section{Case-Hardening Steels}
+\subsubsection{Case-Hardening Steels}
 \label{case-hardening-steels}
 Case hardening is a hardening of only the surface material (the case).
 It is usually accomplished by carburizing, cyaniding, nitriding,
@@ -680,14 +674,14 @@ and alloy steels, then quenching and tempering.
 Induction hardening and flame hardening heat only the surfaces of parts
 made of medium-carbon and alloy steels, then quenching and tempering.
 
-\section{Stainless Steels}
+\subsubsection{Stainless Steels}
 \label{stainless-steels}
 Stainless steels contain, by definition, a minimum of 10.5 percent
 chromium. Wrought stainless steels are austenitic, ferritic,
 martensitic, or precipitation hardening. Cast stainless steels are
 usually classed as heat-resistant or corrosion-resistant.
 
-\section{Iron-Based Superalloys}
+\subsubsection{Iron-Based Superalloys}
 \label{iron-based-superalloys}
 Iron-based superalloys are used primarily for elevated temperature
 applications, as in turbines. Some authorities consider only the
@@ -699,9 +693,9 @@ resistance to creep, oxidation, corrosion, and wear. Typical uses are
 for parts (including bolts) of gas turbines, jet engines, heat
 exchangers, and furnaces.
 
-\section{Nonferrous Alloys}
+\subsection{Nonferrous Alloys}
 \label{nonferrous-alloys}
-\section{Aluminum Alloys}
+\subsubsection{Aluminum Alloys}
 \label{aluminum-alloys}
 Literally hundreds of aluminum alloys are available, in both wrought and
 cast forms. The chemical composition of aluminum alloys is designated by
@@ -723,7 +717,7 @@ to counteract shrinkage. Hot shortness and gas absorption can be
 problems unless details of appropriate foundry practice are specified
 and controlled.
 
-\section{Copper Alloys}
+\subsubsection{Copper Alloys}
 \label{copper-alloys}
 Copper alloys include a variety of brasses, alloys made principally of
 copper and zinc, and bronzes, alloys made principally of copper and tin.
@@ -736,7 +730,7 @@ such as greater strength, resistance to heat softening, and
 machinability, can often be markedly improved by adding small amounts of
 additional alloying agents.
 
-\section{Magnesium Alloys}
+\subsubsection{Magnesium Alloys}
 \label{magnesium-alloys}
 Magnesium alloys are the lightest engineering metals. They are
 designated by a system established by the American Society for Testing
@@ -756,7 +750,7 @@ serial letter that indicates some variation in composition or minor
 alloying constituents or impurities. For example, alloy AZ31B-H24
 contains 3 percent aluminum, 1 percent zinc, and is strain-hardened.
 
-\section{Nickel Alloys and Nickel-Based Superalloys}
+\subsubsection{Nickel Alloys and Nickel-Based Superalloys}
 \label{nickel-alloys-and-nickel-based-superalloys}
 Nickel alloys are used in a variety of structural applications that
 usually require specific corrosion resistance, and strength and
@@ -773,13 +767,13 @@ creep properties in the range of 2000\)\textsuperscript{\^{}}\(F (1093\)\textsup
 Inconel, Incoloy, Rene, and Udimet alloys are Ni--Cr and Ni--Cr--Fe
 alloys.
 
-\section{Titanium Alloys}
+\subsubsection{Titanium Alloys}
 \label{titanium-alloys}
 Titanium alloys are nonmagnetic and extremely corrosion-resistant, have
 low thermal conductivity, and have outstanding strength-weight ratios.
 On the negative side, they are very expensive and difficult to machine.
 
-\section{Zinc Alloys}
+\subsubsection{Zinc Alloys}
 \label{zinc-alloys}
 Zinc is a relatively inexpensive metal with moderate strength. It has a
 low melting temperature and so is readily and economically die-cast.
@@ -787,7 +781,7 @@ Typical zinc die castings include automotive parts, building hardware,
 office machine components, and toys. Limited use is made of the metal in
 other forms.
 
-\section{Plastics and Composites}
+\subsection{Plastics and Composites}
 \label{plastics-and-composites}
 The information contained in this section is a brief overview of an
 extensive and complex field. Additional technical information related to
@@ -796,7 +790,7 @@ at \url{http://www.sabic-ip.com/}. Volumes of information concerning
 composite materials are given in MIL-HDBK 17, Composite Materials
 Handbook [15], [16], [17], [18], and [19].
 
-\section{Plastics}
+\subsubsection{Plastics}
 \label{plastics}
 Plastics constitute a large and varied group of synthetic organic
 materials. The basic chemical units of plastic materials are monomers.
@@ -1015,7 +1009,7 @@ sealants.
 \end{itemize}
 \end{enumerate}
 
-\section{Composites}
+\subsubsection{Composites}
 \label{composites}
 A composite is composed or formed from two or more materials each having
 different properties. Within the composite, the materials remain
@@ -1086,7 +1080,7 @@ information including applications of polymer matrix composites (PMC),
 metal matrix composites (MMC) and ceramic matrix composites (CMC) is
 provided in references [17], [18], and [19]
 
-\section{Engineering Material Selection Process}
+\subsection{Engineering Material Selection Process}
 \label{engineering-material-selection-process}
 The selection of materials and the processes used in manufacturing a
 machine component always influence one another, which in turns
@@ -1110,7 +1104,7 @@ into the required ranges of material properties, which helps narrowing
 down the qualified materials. Cost and availability considerations are
 also added to finalize the group of candidate materials.
 
-\section{Material Selection Factors}
+\subsubsection{Material Selection Factors}
 \label{material-selection-factors}
 Important material selection factors to fulfill design requirements are:
 
@@ -1148,7 +1142,7 @@ inexpensive method to enhance material properties without switching
 to a stronger, more expensive material.
 \end{enumerate}
 
-\section{Materials Selection Charts}
+\subsubsection{Materials Selection Charts}
 \label{materials-selection-charts}
 Browsing through materials whose properties fit within the require
 ranges can be a daunting task. As such, Ashby's materials selection
@@ -1244,7 +1238,7 @@ elimination we have made for the temperature requirement, the qualified
 materials are steels, titanium alloys, and Ni alloys.
 \end{enumerate}
 
-\section{Material Selection Procedure}
+\subsubsection{Material Selection Procedure}
 \label{material-selection-procedure}
 Just like mechanical design problems, material selection tends to
 involve making decisions with neither complete nor accurate information
@@ -1285,7 +1279,7 @@ product is required. Reevaluate the risk and uncertainty of chosen
 material, for example, cost of product failure.
 \end{enumerate}
 
-\section{Summary}
+\subsection{Summary}
 \label{summary-1}
 Material selection process is as challenging as other mechanical design
 processes. It involves analysis of the requirements, identification of
@@ -1294,7 +1288,7 @@ verification. The important step is the translation of key functional
 requirements to required material properties, but also the inclusion of
 risk, economic, and process analysis.
 
-\section{Exercises}
+\subsection{Exercises}
 \label{exercises-1}
 [lab:\arabic{chapter}.\arabic{exercisesi}] Choose a proper plastic for a
 2-liter cylindrical water container so that the final wall thickness
@@ -1315,7 +1309,7 @@ an engine shaft. It should be able to withstand the torque of at least
 for a steel bolt so that the weight is minimized. Its ultimate tensile
 strength should be at least 400 MPa.
 
-\chapter{การวิเคราะห์ภาระสถิตย์}
+\section{การวิเคราะห์ภาระสถิตย์}
 \label{static-body-load-analysis}
 In this chapter, topics covered in Mechanics of Materials that are
 directly related to Mechanical Design are reviewed. Mechanics of
@@ -1324,7 +1318,7 @@ built upon; an engineer cannot effectively and properly design a
 component without understanding the type of loadings, supports, and
 stresses applied to the part.
 
-\section{Stress, strain, and stress-strain relationship}
+\subsection{Stress, strain, and stress-strain relationship}
 \label{stress-strain-and-stress-strain-relationship}
 In engineering, the deformation of a body is specified using the concept
 of normal and shear strain. We will look at how stress deforms a body
@@ -1347,7 +1341,7 @@ acting inside the body.
 
 $$\sum F = 0$$ $$\sum M = 0$$
 
-\section{Concepts of Load}
+\subsubsection{Concepts of Load}
 \label{concepts-of-load}
 Considering a surface cutting through the body, there can be 2 types of
 forces and 2 types of moments acting on the surface
@@ -1367,7 +1361,7 @@ twist the segment with respect to another.
 about an axis lying within the plane of the surface.
 \end{itemize}
 
-\section{Definition of Stress}
+\subsubsection{Definition of Stress}
 \label{definition-of-stress}
 By definition, stress is the force per unit cross sectional area that it
 is acting upon. There are two types of stress, depending on the
@@ -1401,7 +1395,7 @@ $$\arraycolsep=1.4pt\def1.4{2.2}
     \tau _{zy} = \mathop {\lim }\limits_{A \to 0} \dfrac{F_y}{A}
   \end{array}$$
 
-\section{Equilibrium Requirement}
+\subsubsection{Equilibrium Requirement}
 \label{equilibrium-requirement}
 Consider an infinitesimal cubic element, illustrated in \ref{fig: 3d-stress-element}, with external
 forces applied, each of the six faces of the cube will have three
@@ -1454,7 +1448,7 @@ $$\arraycolsep=1.4pt\def1.4{1.5}
   \end{array}$$
 \end{enumerate}
 
-\section{Deformation and Strain}
+\subsubsection{Deformation and Strain}
 \label{deformation-and-strain}
 In order to describe deformation by changes in the length or by the
 changes in angles of the element, we will need to develop the concept of
@@ -1515,7 +1509,7 @@ in the volume of the element, while the shear strains cause a change in
 its shape.
 \end{enumerate}
 
-\section{Hooke's Law in One Dimension}
+\subsubsection{Hooke's Law in One Dimension}
 \label{hookes-law-in-one-dimension}
 Since the stress-strain relationship for most engineering materials
 exhibit a linear relationship between stress and strain within the
@@ -1528,7 +1522,7 @@ $$\sigma  = E\varepsilon$$
 Here \(E\) represents the constant of proportionality, which is called the
 modulus of elasticity or Young's modulus.
 
-\section{Poisson's Ratio}
+\subsubsection{Poisson's Ratio}
 \label{poissons-ratio}
 When a deformable body is subjected to an axial tensile force, not only
 does it elongate but it also contracts laterally. A French scientist S.
@@ -1546,7 +1540,7 @@ lateral contraction, and vice versa. Poisson's ratio has no unit, or
 dimensionless, and for most nonporous material it has a value between
 0.25 and 0.33.
 
-\section{Shear stress-shear strain relationship}
+\subsubsection{Shear stress-shear strain relationship}
 \label{shear-stress-shear-strain-relationship}
 Much like the way there is a relationship between normal stress and
 normal strain in most engineering materials, shear stress and shear
@@ -1557,7 +1551,7 @@ $$\tau  = G\gamma$$
 \(G\) is called the shear modulus of elasticity and has the same unit as
 Young's modulus
 
-\section{Thermal effect}
+\subsection{Thermal effect}
 \label{thermal-effect}
 A change in temperature can cause a material to change its dimensions.
 If the temperature increases, generally a material expands, whereas if
@@ -1624,7 +1618,7 @@ $$\begin{aligned}
              &= 2.2 \times 10^{-3} \text{ m}
   \end{aligned}$$
 
-\section{Axially loaded members}
+\subsection{Axially loaded members}
 \label{axially-loaded-members}
 The main concern here will be the stresses and associated deformations
 due to axial loadings. It is often necessary to determine not only the
@@ -1636,7 +1630,7 @@ axial stress in these cases is assumed not to exceed the yield strength
 of the material. The definition of normal stress, normal strain, and the
 relationship between the two given by Hooke's law are employed.
 
-\section{Prismatic bars}
+\subsubsection{Prismatic bars}
 \label{prismatic-bars}
 When determining the changes in length of axially loaded members, it is
 convenient to begin with a coil spring. When a load is applied along the
@@ -1670,7 +1664,7 @@ load \(P\) and the member length \(L\), and inversely proportional to the
 modulus of elasticity \(E\) and the cross-sectional area \(A\). This
 equation works assuming that the bar has a uniform cross section.
 
-\section{Nonprismatic bars}
+\subsubsection{Nonprismatic bars}
 \label{nonprismatic-bars}
 However, if the bar is loaded by different axial loads, bar made of
 different materials, or its cross sectional area varies throughout its
@@ -1706,7 +1700,7 @@ And the total elongation of the entire bar is
 
 $$\delta  = \int_0^L {d\delta }  = \int_0^L \frac{P(x)dx}{EA(x)}$$
 
-\section{Torsion}
+\subsection{Torsion}
 \label{torsion}
 Torsion is a twist of a straight bar when loaded by moments that tend to
 produce rotation about the longitudinal axis of the bar.
@@ -1719,7 +1713,7 @@ Finally, we cover several additional topics related to torsion such as
 statically indeterminate members, strain energy, thin-walled tubes, and
 nonlinear torsion behavior.
 
-\section{Simple torsion}
+\subsubsection{Simple torsion}
 \label{simple-torsion}
 Simple torsion is the case where the cross-sectional area and the torque
 throughout the length of the material are constant. The understanding of
@@ -1882,7 +1876,7 @@ $$\begin{gathered}
 
 Therefore, the bar twisted in the same direction as \(T_2\) by 0.0106 rad.
 
-\section{Nonuniform Torsion}
+\subsubsection{Nonuniform Torsion}
 \label{nonuniform-torsion}
 In the case of nonuniform torsion, we have loosened the restrictions
 previously and implicitly imposed on the previous section which are that
@@ -1955,7 +1949,7 @@ $$\phi  = \int_0^L \frac{T(x)dx}{GJ(x)}$$
 
 This integral usually must be evaluated numerically.
 
-\section{Bending}
+\subsection{Bending}
 \label{section: bending}
 When external load is applied perpendicular to the axis of the length of
 the beam, it will create a shear force and/or bending moment inside the
@@ -1964,7 +1958,7 @@ this chapter, we will analyze the relationship between the external
 load, the shear force, the bending moment, and the deflection of the
 beam.
 
-\section{Pure Bending}
+\subsubsection{Pure Bending}
 \label{pure-bending}
 First we will consider the simplest case of bending where the cross
 section of the beam in consideration has at least one axis of symmetry,
@@ -1972,7 +1966,7 @@ and that the applied load is in the same plane as the axis of symmetry.
 This will cause bending in the plane of symmetry, resulting in symmetric
 beam bending.
 
-\section{Longitudinal strains in beams}
+\subsubsection{Longitudinal strains in beams}
 \label{longitudinal-strains-in-beams}
 The longitudinal strain in a beam can be found by analyzing the
 curvature of the beam and the associated deformations. For this purpose,
@@ -2046,7 +2040,7 @@ above the neutral surface, the part is in compression, and vice versa.
 The next step in our analysis is to find the stresses from the strains,
 which derive from Hooke's law for linearly elastic materials.
 
-\section{Normal stresses in beams}
+\subsubsection{Normal stresses in beams}
 \label{normal-stresses-in-beams}
 Since we have established the relationship between the distance of the
 point of interest from the neutral surface and the normal strain in
@@ -2084,7 +2078,7 @@ section, evaluated with respect to the neutral axis, is zero. In other
 words, the neutral axis must pass through the centroid of the cross
 section.
 
-\section{Moment-curvature formula}
+\subsubsection{Moment-curvature formula}
 \label{moment-curvature-formula}
 We also know that the resultant moment of the normal stresses acting
 over the cross section must be equal to the bending moment at that cross
@@ -2124,7 +2118,7 @@ the curvature of the bending beam is directly proportional to the
 bending moment and inversely proportional to the quantity \(EI\), which is
 called the \emph{flexural rigidity} of the beam.
 
-\section{Elastic Flexure Formula}
+\subsubsection{Elastic Flexure Formula}
 \label{elastic-flexure-formula}
 Now that we have located the neutral axis and derived the
 moment-curvature relationship, we can determine the stress inside the
@@ -2139,7 +2133,7 @@ directly proportional to the bending moment \(M\) and inversely
 proportional to the moment of inertial \(I\). The stresses also vary
 linearly with the distance \(y\) from the neutral axis.
 
-\section{Maximum stress at a cross section}
+\subsubsection{Maximum stress at a cross section}
 \label{maximum-stress-at-a-cross-section}
 From \ref{eqn: flexure formula}, we know that the
 maximum tensile stress and compressive stress on a given cross section
@@ -2164,7 +2158,7 @@ $$\begin{gathered}
 The quantities \(S_1\) and \(S_2\) are known as the section moduli of the
 cross section.
 
-\section{Shear stresses in beams}
+\subsubsection{Shear stresses in beams}
 \label{shear-stresses-in-beams}
 When the beam is in pure bending, there are only bending moments and
 normal stresses in the cross sections. However, most beams are subjected
@@ -2240,7 +2234,7 @@ Note that for a specific cross section, the shear force \(V\), the moment
 of inertia \(I\), and the cross-sectional width \(b\) are constant; only the
 first moment \(Q\) changes with the distance \(y\) from the neutral axis.
 
-\section{Beam deflection}
+\subsubsection{Beam deflection}
 \label{subsection: beam deflection}
 In certain engineering applications, it is more important to understand
 the deformation, or deflection, of a beam due to bending moment or shear
@@ -2641,7 +2635,7 @@ positive deflections indicate that it is in the same direction as the
 force, which is downward.
 \end{enumerate}
 
-\section{Analysis of Multiaxial Stress}
+\subsection{Analysis of Multiaxial Stress}
 \label{section: multiaxial stress}
 In this section, we will show how to transform the stress components
 that are associated with a particular coordinate system into ones
@@ -2650,7 +2644,7 @@ equation have been established, we can use them to obtain the maximum
 normal and shear stress components at a point and find the orientation
 of the element on which they act.
 
-\section{2D Stress Transformation}
+\subsubsection{2D Stress Transformation}
 \label{d-stress-transformation}
 Normally, the state of stress at a point in a body is defined by six
 independent normal and shear stresses. However, this is rarely
@@ -2710,7 +2704,7 @@ If we know the stress components for all possible orientations of faces
 through a point, we say that we know the \emph{state of stress} at a point.
 \end{enumerate}
 
-\section{Mohr's Circle for Stress Transformation}
+\subsubsection{Mohr's Circle for Stress Transformation}
 \label{mohrs-circle-for-stress-transformation}
 The stress transformation can be made easier to understand through the
 use of a graphical representation. However, first we have to rewrite
@@ -2759,7 +2753,7 @@ its original coordinate system, simply draw the line from the center of
 the circle at angle \(2\alpha\) from the original state to determine
 stress components at this new orientation.
 
-\section{Principal stresses in 2D}
+\subsubsection{Principal stresses in 2D}
 \label{principal-stresses-in-2d}
 Considering the two points where the circle crosses the \(\sigma\) axis,
 these two points are where the two normal stress components are at
@@ -2771,7 +2765,7 @@ $$\sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt {\frac{\sigma_x - \sigm
 
 Also note that the shear stress component is zero in this orientation.
 
-\section{Maximum Shear Stresses in 2D}
+\subsubsection{Maximum Shear Stresses in 2D}
 \label{maximum-shear-stresses-in-2d}
 At the highest point of the circle represents the maximum shear stress
 and its orientation. We can represent the maximum shear stress in terms
@@ -2859,7 +2853,7 @@ As mentioned earlier, the directions of both of these stresses are along
 the length of the shaft, so we can add them up, giving the final state
 of stress as 318 + 31.8 = 349.8 MPa.
 
-\section{Stress Concentration}
+\subsection{Stress Concentration}
 \label{stress-concentration}
 In cases where the cross section of the component under loading---axial,
 torsional, or bending---changes gradually, the formulas derived in
@@ -3029,7 +3023,7 @@ $$\begin{aligned}
       &= 1.02 \times 10^7 \text{ N-m}
   \end{aligned}$$
 
-\section{Summary}
+\subsection{Summary}
 \label{summary-2}
 In this chapter, fundamentals of mechanics of materials are reviewed. To
 be able to analyze and properly design mechanical components, a designer
@@ -3044,7 +3038,7 @@ Proficiency in these topics is crucial in the next chapter, which
 involves determining material failure under different loading
 conditions.
 
-\section{Exercises}
+\subsection{Exercises}
 \label{exercises-2}
 [lab:\arabic{chapter}.\arabic{exercisesi}] A compound bar consists of
 four brass wires of 2.5 mm diameter and one steel wire of 1.5 mm
@@ -3121,8 +3115,9 @@ these elements
 \includegraphics[width=.9\linewidth]{pictures/Static-body-load-analysis/plane-stress-exercise3.pdf}
 \end{center}
 
-\chapter{ทฤษฎีการล้มเหลวเบื้องต้น}
-\label{introduction-to-theories-of-failure}
+\section{ทฤษฎีการล้มเหลวเบื้องต้น}
+\label{sec:orgbf9d556}
+
 Material failures occur when solid materials lose their strength due to
 external loads. In this section, we will discuss theories that predict
 the failure of materials due to multiple types of loadings---multiaxial,
@@ -3132,8 +3127,9 @@ theory can apply to all materials under all situations, and therefore we
 must also be able to apply the appropriate theory to the appropriate
 situation.
 
-\section{Yield and Fracture}
-\label{yield-and-fracture}
+\subsection{Yield and Fracture}
+\label{sec:orgd0f2e53}
+
 In uniaxial state of stress, the material behavior during yield is
 relatively simple and can be explained by yield stress criteria.
 However, more generally, we must apply failure criteria under a
@@ -3141,16 +3137,9 @@ multiaxial state of stress. The study of the materials that yield is
 known as plasticity theory. We only limit ourselves to the first third
 of plasticity theory---the prediction of yield initiation.
 
-A yield criterion can be any descriptive statement that defines
-conditions under which yielding will occur. It may be expressed in terms
-of specific quantities, such as stress state, the strain state, a strain
-energy quantity, or others. To develop a yield function, the components
-of the multiaxial stress state are combined into a single quantity known
-as the effective stress . The effective stress is then compared with the
-yield stress , in some appropriate form, to determine if yield has
-occurred.
+A yield criterion can be any descriptive statement that defines conditions under which yielding will occur. It may be expressed in terms of specific quantities, such as stress state, the strain state, a strain energy quantity, or others. To develop a yield function, the components of the multiaxial stress state are combined into a single quantity known as the effective stress . The effective stress is then compared with the yield stress , in some appropriate form, to determine if yield has occurred.
 
-\section{Maximum shear stress theory (Tresca criteria)}
+\subsubsection{Maximum shear stress theory (Tresca criteria)}
 \label{maximum-shear-stress-theory-tresca-criteria}
 The most common cause of yielding of a ductile material is slipping,
 which occurs due to shear stress. If we make a specimen into a highly
@@ -3209,7 +3198,7 @@ $$\begin{gathered}
       \left| {\sigma _1} - {\sigma _2} \right| > \frac{S_y}{N_s} \hspace{0.6cm} \text{when } \dfrac{\sigma_1}{\sigma_2} < 0
   \end{gathered}$$
 
-\section{Maximum distortion energy theory (Von Mises criteria)}
+\subsubsection{Maximum distortion energy theory (Von Mises criteria)}
 \label{maximum-distortion-energy-theory-von-mises-criteria}
 We know that when a material deforms by an external loading, it stores
 energy internally throughout its volume. The energy per unit volume of
@@ -3338,7 +3327,7 @@ $$\begin{gathered}
          \end{gathered}$$
 \end{enumerate}
 
-\section{Ductile Coulomb-Mohr theory}
+\subsubsection{Ductile Coulomb-Mohr theory}
 \label{ductile-coulomb-mohr-theory}
 Not all materials have the same compressive and tensile strengths. For
 example, the yield strengths of magnesium alloys in compression is
@@ -3383,7 +3372,7 @@ $$\begin{array}{l l l}
     \sigma_2 <  -\dfrac{S_{uc}}{N_s} & & \sigma_2 < \sigma_1 < 0
   \end{array}$$
 
-\section{Maximum principal stress theory}
+\subsubsection{Maximum principal stress theory}
 \label{maximum-principal-stress-theory}
 Also called \emph{Rankine's criterion} or \emph{maximum normal stress criterion},
 it states that yielding begins at a point in a member where the maximum
@@ -3434,7 +3423,7 @@ $$\begin{array}{l l l}
     \sigma_2 <  - \dfrac{S_{uc}}{N_s} & & \sigma _2 < \sigma _1 < 0
   \end{array}$$
 
-\section{Modified Coulomb-Mohr theory}
+\subsubsection{Modified Coulomb-Mohr theory}
 \label{modified-coulomb-mohr-theory}
 Over the years, various empirical theories have been proposed to modify
 the basic failure theories. Coulomb-Mohr theory was proposed to predict
@@ -3478,7 +3467,7 @@ The failure condition diagram for the theory is illustrated in
   \label{fig: MCM safe zone}
 \end{figure}
 
-\section{Criterion selection}
+\subsubsection{Criterion selection}
 \label{criterion-selection}
 With an exception of a few, most ductile materials have the same tensile
 and compressive yield strengths. Therefore, \emph{maximum distortion energy
@@ -3488,7 +3477,7 @@ to all states of stress regardless of the signs of the principal
 stresses. For brittle materials, \emph{modified Coulomb-Mohr theory} shows
 the best fit to most experimental results and should be applied.
 
-\section{Fatigue}
+\subsection{Fatigue}
 \label{fatigue}
 Fatigue has been defined as ``the progressive localized permanent
 structural change that occurs in a material subjected to repeated or
@@ -3534,7 +3523,7 @@ alloys do not; there does not exist a minimum stress below which fatigue
 does not occur. This is why these aluminum alloys, though lighter,
 simply cannot replace steel in many machine design applications.
 
-\section{Fatigue under zero mean stress}
+\subsubsection{Fatigue under zero mean stress}
 \label{fatigue-under-zero-mean-stress}
 When the load is completely reversed, resulting in zero mean stress
 (\(\sigma_m = 0\)), fatigue failure can mostly be described by stress
@@ -3577,7 +3566,7 @@ $$\begin{aligned}
 
 Parameter \(b\) is between \(-0.06\) to \(-0.14\) for most metals.
 
-\section{Fatigue under nonzero mean stress}
+\subsubsection{Fatigue under nonzero mean stress}
 \label{fatigue-under-nonzero-mean-stress}
 Nonzero mean stresses have a significant effect on the fatigue strength
 of a material. There have been several relations proposed to describe
@@ -3635,7 +3624,7 @@ According to the Soderberg relation, we have
 
 Therefore, the rod's diameter must be 7.9 mm.
 
-\section{Buckling}
+\subsection{Buckling}
 \label{section: buckling}
 Whenever a member is designed, it is necessary that it satisfy specific
 strength, deflection, and stability requirements. The previous chapters
@@ -3655,7 +3644,7 @@ load, \(P_{cr}\). Any additional loading will cause the column to buckle
 and therefore deflect laterally. Depending on the supports of a column,
 the critical load can vary.
 
-\section{Ideal column with pin supports}
+\subsubsection{Ideal column with pin supports}
 \label{ideal-column-with-pin-supports}
 In this section we will determine the critical buckling load for a
 column that is pin-supported. The column to be considered is an \emph{ideal
@@ -3761,7 +3750,7 @@ $$\sigma_{cr} = \frac{\pi ^2E}{(L/r_g)^2}$$
 The geometric ratio \(L/r_g\) is known as the \emph{slenderness ratio}. It is a
 measure of the column's flexibility.
 
-\section{Columns having various types of supports}
+\subsubsection{Columns having various types of supports}
 \label{columns-having-various-types-of-supports}
 In some other cases where the columns are supported in some other way,
 so that the column's ends may be restricted against rotations or
@@ -3894,7 +3883,7 @@ stressing}, the rail is pre-stretched before installation. This
 technique preloads the rail in tension and thus it will be much less
 likely to buckle.
 
-\section{Summary}
+\subsection{Summary}
 \label{summary-3}
 In this chapter, we study various ways engineering materials can fail.
 The first two, yield/fracture and fatigue are due to damage inflicted to
@@ -3921,7 +3910,7 @@ compressive load if a slight lateral perturbation occurs. The critical
 axial load depends on the dimensions of the body, material properties,
 and support conditions.
 
-\section{Exercises}
+\subsection{Exercises}
 \label{exercises-3}
 [lab:\arabic{chapter}.\arabic{exercisesi}] A plane stress element is
 under the following state of stress. \(\sigma_x = 150\) MPa,
@@ -3964,10 +3953,9 @@ difference in thickness between your second design and your first design
 \(t_2 – t_1\)? Note: use maximum distortion energy theory to determine
 failure.
 
-
-\part{การออกแบบชิ้นส่วน}
+\chapter{การออกแบบชิ้นส่วน}
 \label{the-components}
-\chapter{Design of Simple Load Bearing Elements}
+\section{Design of Simple Load Bearing Elements}
 \label{design-of-simple-load-bearing-elements}
 Load bearing elements are designed to support forces, moments, or
 torques and transfer them to their intended destination. A beam
@@ -3981,7 +3969,7 @@ The goal of this chapter is to develop the fundamental concepts involved
 in designing load bearing elements to properly resist their respective
 loads under given constraints.
 
-\section{Basis for Beam Design}
+\subsection{Basis for Beam Design}
 \label{basis-for-beam-design}
 Beams are often designed based on their strength so that they can resist
 internal bending moment and shear force developed along their length.
@@ -4048,7 +4036,7 @@ lines intersect at \(90^{\circ}\) because principal stresses are always
 determine where to reinforce a beam especially if the beam is made of
 brittle material so that it will not crack or become unstable.
 
-\section{Prismatic Beam Design}
+\subsection{Prismatic Beam Design}
 \label{prismatic-beam-design}
 Most beams are made of ductile materials. When this is the case, it is
 generally unnecessary to plot stress trajectories. It is typically
@@ -4094,12 +4082,12 @@ stress limitation may dictate the size of the beam. This is especially
 important for wooden beams as they are prone to failure along the grain
 due to shear.
 
-\section{Fabricated Beams}
+\subsection{Fabricated Beams}
 \label{fabricated-beams}
 Since beams are often made of steel or wood, we will discuss some of the
 tabulated properties of beams made from these materials.
 
-\section{Steel sections}
+\subsubsection{Steel sections}
 \label{steel-sections}
 Most manufactured steel beams are made by the process of rolling hot
 steel into a desired shape of cross section. These rolled shapes have
@@ -4164,7 +4152,7 @@ Using the same table, the proper section is S150 \(\times\) 18.6.
 Finally, we see that the \(S_{req}\) requires a larger section, and should
 be our designed beam.
 
-\section{Wood sections}
+\subsubsection{Wood sections}
 \label{wood-sections}
 Most wooden beams have rectangular cross sections because they are easy
 to manufacture and handle. Manuals list the dimensions of lumber often
@@ -4174,7 +4162,7 @@ example 2 \(\times\) 4. However, its actual dimensions are smaller (1.5
 smooth surface. The actual dimensions, of course, must be used when
 calculating stresses in a wooden beam.
 
-\section{Built-up sections}
+\subsubsection{Built-up sections}
 \label{built-up-sections}
 A built-up section is made from two or more parts joined together. Since
 the ability of a beam to resist moment depends on its section modulus,
@@ -4207,7 +4195,7 @@ shear stresses do not exceed the allowable values of any of the parts.
 Additionally, the stress of the fasteners (welds, bolts, or glue) must
 also be checked to prevent the beams from coming apart.
 
-\section{Fully Stressed Beams}
+\subsection{Fully Stressed Beams}
 \label{fully-stressed-beams}
 Since the moment in a beam generally varies along its length, prismatic
 beams are not usually the most efficient choice for resisting moment
@@ -4290,7 +4278,7 @@ $$h(x) = \sqrt{\dfrac{6F(x-L)}{b \sigma_{allow}}}$$
 \includegraphics[width=.9\linewidth]{pictures/Simple-load-bearing/fully-stressed-parabola.pdf}
 \end{center}
 
-\section{Shaft Design}
+\subsection{Shaft Design}
 \label{shaft-design}
 Shafts with circular cross sections are the staple of machine design.
 They are used to transfer torque and set alignment to rotational
@@ -4402,7 +4390,7 @@ $$\begin{aligned}
 Note that \(\tau_{allow}\) is derived from maximum shear stress theory,
 for which \(\tau_{allow} = S_y/2\).
 
-\section{Column Design}
+\subsection{Column Design}
 \label{column-design}
 In the previous sections, we discussed the design of members based on
 strength and deflection by assuming that they are always in equilibrium
@@ -4412,7 +4400,7 @@ and dramatic failure of a structure or mechanism. Hence, special
 attention must be given to the design of columns so that they can
 support their intended loads without buckling.
 
-\section{Design of simple columns}
+\subsubsection{Design of simple columns}
 \label{design-of-simple-columns}
 Simple columns refer to prismatic columns with homogeneous materials and
 ideal supports. The governing equations of these columns have already
@@ -4436,7 +4424,7 @@ $$r_{req} = \left( \frac{4I_{req}}{\pi } \right)^{\frac{1}{4}}$$
 Similar derivations can be used to compute dimensions for columns with
 square or rectangular (with known width-to-height ratio) cross sections.
 
-\section{Design of columns for concentric loading}
+\subsubsection{Design of columns for concentric loading}
 \label{subsection: column concentric loading}
 The theory presented in the previous section applies to columns that are
 perfectly straight, made of homogeneous material, and originally stress
@@ -4608,7 +4596,7 @@ last equation in is simply Euler's equation with a safety factor of 3.
 \end{enumerate}
 
 
-\section{Design of columns for eccentric loading}
+\subsubsection{Design of columns for eccentric loading}
 \label{design-of-columns-for-eccentric-loading}
 Occasionally a column is required to support a load acting at its edge
 or, more generally, an off-centroid load. In this case, the load will
@@ -4842,7 +4830,7 @@ be solve analytically. On the other hand, the moments of inertia
 \(I_{jib}\) and \(I_{mast}\) can be solved without that information.
 \end{enumerate}
 
-\section{Summary}
+\subsection{Summary}
 \label{summary-4}
 This chapter discusses the design criteria for simple load-bearing
 members---namely beams (for bending loads), shafts (for torques), and
@@ -4854,7 +4842,7 @@ bearing elements. A designer must also take care to examine risks for
 various types of failure a member may undergo, examine the most likely
 type of failure of that component, and properly design to mitigate it.
 
-\section{Exercises}
+\subsection{Exercises}
 \label{exercises-4}
 [lab:\arabic{chapter}.\arabic{exercisesi}] A 2-m long square
 (\(a \times a\)) cross-sectioned oak wood column (\(E\) = 12 GPa, \(S_{uc}\) =
@@ -4937,7 +4925,7 @@ downward load on the plank of 1500 N, recalculate the proper cross
 section size of the plank so that the fatigue safety factor is 4.
 \end{enumerate}
 
-\chapter{Spring Design}
+\section{Spring Design}
 \label{spring-design}
 Springs are elastic members that exert forces and torques and absorb
 energy, which is usually stored and later released. Typically they are
@@ -4971,7 +4959,7 @@ axis.
 These are by no means an exhaustive list, but this book's main focus
 will be on these four as a starting point.
 
-\section{Torsion Bar Springs}
+\subsection{Torsion Bar Springs}
 \label{torsion-bar-springs}
 Perhaps the simplest of all the spring forms is the torsion bar. Common
 applications include part of automotive suspension springs and counter
@@ -4988,7 +4976,7 @@ energy.
 \caption{\label{fig: torsion bar spring}Torsion bar spring suspension system}
 \end{figure}
 
-\section{Torsion Bar Spring Stress and Deformation}
+\subsubsection{Torsion Bar Spring Stress and Deformation}
 \label{torsion-bar-spring-stress-and-deformation}
 In this case, the basic stress, angular deflection (or angle of twist),
 and spring rates equations are
@@ -5007,7 +4995,7 @@ $$\begin{gathered}
     k = \frac{\pi d^4G}{32L} \hfill \\ 
   \end{gathered}$$
 
-\section{Torsion Bar Spring Materials}
+\subsubsection{Torsion Bar Spring Materials}
 \label{torsion-bar-spring-materials}
 As expected, torsion bar springs--especially in automotive suspension
 applications--tend to incur repeated loadings during operation. As such,
@@ -5095,7 +5083,7 @@ $$\begin{gathered}
 In this problem, the diameter according to the stress requirement is the
 larger one, and is our final design diameter.
 
-\section{Helical Springs}
+\subsection{Helical Springs}
 \label{helical-springs}
 Helical springs employ the same principles as torsion bar springs, but
 avoid the problem of size by winding the spring into helical coils.
@@ -5103,7 +5091,7 @@ Helical springs still operate mainly under torsion, however, their
 stresses are different from their torsional bar counterparts because of
 their geometry.
 
-\section{Helical Spring Stress}
+\subsubsection{Helical Spring Stress}
 \label{helical-spring-stress}
 Consider helical coil springs with relatively small helix angle and wire
 diameter d, illustrated in
@@ -5162,7 +5150,7 @@ simpler expression.
 
 $$\tau  = K_b\frac{8FD}{\pi d^3}$$
 
-\section{Helical Spring Constant and Deflection}
+\subsubsection{Helical Spring Constant and Deflection}
 \label{helical-spring-constant-and-deflection}
 Derivation of spring deflection can be done using Castigliano's theorem.
 By assuming that transverse shear contributes negligibly to the
@@ -5189,7 +5177,7 @@ applied force and the deflection, which gives
   k = \frac{Gd}{8C^3N_a} \hfill \\ 
 \end{gather}
 
-\section{Analysis for Helical Compression Springs under Static Loading}
+\subsubsection{Analysis for Helical Compression Springs under Static Loading}
 \label{analysis-for-helical-compression-springs-under-static-loading}
 Helical springs are typically wound from wire of solid round cross
 section. Although spring wire was formerly manufactured primarily in
@@ -5261,7 +5249,7 @@ used for aircraft engine valve springs for up to 220 C.\\
 Chrome-silicon \& Excellent under high stress and shock loadings, and
 provides good longevity.\\
 
-\section{End Designs of Helical Compression Springs}
+\subsubsection{End Designs of Helical Compression Springs}
 \label{end-designs-of-helical-compression-springs}
 In order to ensure that the resultant load coincides with the spring
 axis, spring ends must be designed properly for their uses. This usually
@@ -5283,7 +5271,7 @@ Solid length, \(l_s\) \& \(d(N_t+1)\) \& \(d N_t\) \& \(d(N_t+1)\) \& \$dN\texts
 pitch, \(p\) \& \((l_f - d)/N_a\) \& \(l_f/(N_a + 1)\) \& \((l_f - 3d)/N_a\) \&
 \$(l\textsubscript{f} - 2d)/N\textsubscript{a}\$\\
 
-\section{Buckling Analysis of Helical Compression Springs}
+\subsubsection{Buckling Analysis of Helical Compression Springs}
 \label{buckling-analysis-of-helical-compression-springs}
 Coil springs loaded in compression behave just like columns and must be
 considered for possible buckling. For columns, long and slender ones are
@@ -5363,7 +5351,7 @@ $$L_f < 2.63 \frac{D}{K}$$
 For squared and ground ends between flat parallel surfaces \(K\) = 0.5 and
 \(L_f < 5.26 D\).
 
-\section{Design Procedure for Helical Compression Spring---Static Loading}
+\subsubsection{Design Procedure for Helical Compression Spring---Static Loading}
 \label{design-procedure-for-helical-compression-springstatic-loading}
 The two most basic requirements of a helical spring design are an
 acceptable stress level and the desired spring rate. To minimize weight,
@@ -5704,7 +5692,7 @@ $$\begin{aligned}
           &= 2.67 \times 10^{-2} \text{ m}
   \end{aligned}$$
 
-\section{Design of Helical Compression Springs for Fatigue Loading}
+\subsubsection{Design of Helical Compression Springs for Fatigue Loading}
 \label{design-of-helical-compression-springs-for-fatigue-loading}
 This section covers additional considerations for designing helical
 compression spring for fatigue loading. Figure 6.6 shows a typical \(S-N\)
@@ -5723,7 +5711,7 @@ methods proved effective in enhancing fatigue resistance: shot peening
 and presetting. Both of these methods create residual stress in the
 wire, allowing the spring to take more stress in the opposite direction.
 
-\section{Frequency Consideration}
+\subsubsection{Frequency Consideration}
 \label{frequency-consideration}
 Spring used in high-speed machinery must have natural frequencies of
 vibration well in excess of the frequency of motion they control. For
@@ -5772,7 +5760,7 @@ where \(d\) and \(D\) are in meters. As a safety precaution, the natural
 frequency of the first mode of vibration of the designed spring should
 be at least 15-20 times that of the system.
 
-\section{Helical Extension Springs}
+\subsubsection{Helical Extension Springs}
 \label{helical-extension-springs}
 Most of the equations for helical compression springs applies equally
 well to extension springs, but we need to note a few difference between
@@ -5916,7 +5904,7 @@ the number of required active coils is
 
 $$N_a = \frac{Gd}{8C^3k} = \frac{79.3 \times 10^9(5.5 \times 10^{-3})}{8(8^3)(700)} = 152\text{ coils}$$
 
-\section{Beam Springs}
+\subsection{Beam Springs}
 \label{beam-springs}
 Beams springs (commonly fabricated as multileaf springs) are usually
 arranged as cantilevers and simply supported beams in the form of a
@@ -6032,7 +6020,7 @@ braking. These loads, of course, must be considered when designing
 the spring.
 \end{enumerate}
 
-\section{Torsion Springs}
+\subsection{Torsion Springs}
 \label{torsion-springs}
 There are two general types of torsion springs: helical and spiral (\ref{fig: spiral and helical springs}).
 The primary stress in all torsion springs is bending, since the load is
@@ -6100,7 +6088,7 @@ wire. Square or rectangular wire is also most efficient for use in
 helical torsion springs, but round wire is often used in noncritical
 applications because it is more available and usually costs less.
 
-\section{Summary}
+\subsection{Summary}
 \label{summary-5}
 Springs are used to control loads and deformations, to store and absorb
 energy from impacts and movements, and to exert loads on specific
@@ -6113,7 +6101,7 @@ require multiple recalculations, it is suggested that students use a
 programming calculator or spreadsheet to lighten the manual calculation
 workload.
 
-\section{Exercises}
+\subsection{Exercises}
 \label{exercises-5}
 [lab:\arabic{chapter}.\arabic{exercisesi}] Short answers.
 
@@ -6146,9 +6134,9 @@ rpm.
 
 \url{pictures/Spring-design/valve-spring}
 
-\part{การออกแบบข้อต่อ}
+\chapter{การออกแบบข้อต่อ}
 \label{the-assembly}
-\chapter{Welded Joint Design}
+\section{Welded Joint Design}
 \label{welded-joint-design}
 Welding is an addition process whereby two or more components are
 permanently joined by first partially melting the common surfaces. Once
@@ -6159,7 +6147,7 @@ less complicated. It also does not introduce foreign substances to the
 joint area, nor does it introduce holes and cuts which can lead to
 stress concentration.
 
-\section{Types of Welding}
+\subsection{Types of Welding}
 \label{types-of-welding}
 Modern industrial welding is done by fusion, with the workpieces melting
 at their common surfaces. Heat is applied by an electric arc passing
@@ -6167,7 +6155,7 @@ between an electrode and the work, by high-amperage electric current
 passing through the mating workpieces, or by gas flame. Welding takes
 several forms, typically based on the source of heat, as follows.
 
-\section{Electric arc welding}
+\subsubsection{Electric arc welding}
 \label{electric-arc-welding}
 In this process, workpieces is heated by an electric arc passing from an
 electrode to the pieces. Electric arc welding is further categorized
@@ -6232,7 +6220,7 @@ which the fresh weld is ``submerged.'' The process is commonly used with
 thick sections requiring deep weld penetration.
 \end{enumerate}
 
-\section{Resistance Welding}
+\subsubsection{Resistance Welding}
 \label{resistance-welding}
 In this process, electric current generates heat by the process of
 Joules heating (\(I^2R\)). The current passes through the workpieces while
@@ -6243,7 +6231,7 @@ production of continuous welds (such as pipe seams) or spot welds of
 most steels and aluminum alloys. Material thicknesses range from
 approximately 0.01 -- 2 cm.
 
-\section{Gas welding}
+\subsubsection{Gas welding}
 \label{gas-welding}
 The process is usually performed manually with an oxyacetylene torch and
 is typically slow. It requires more generalized heating of the work, and
@@ -6257,7 +6245,7 @@ welding, processes use a combination of heat and pressure to join parts,
 though the temperature is usually less than the melting point of the
 materials.
 
-\section{Welding Material}
+\subsection{Welding Material}
 \label{welding-material}
 The basic concept of fusion welding is to fuse the materials together
 into a single and homogenous member. Properties of the welding rod
@@ -6277,14 +6265,14 @@ E90XX \& 620 \& 531 \& 14-17\\
 E100XX \& 689 \& 600 \& 13-16\\
 E120XX \& 827 \& 737 \& 14\\
 
-\section{Welded Joint Geometry}
+\subsection{Welded Joint Geometry}
 \label{welded-joint-geometry}
 Weld geometry depends on the orientation of mating parts. It is one of
 the two ingredients, along with load direction, in determining the type
 of stresses exerted on the weld and determining proper weld lengths and
 effective thicknesses.
 
-\section{Butt Welds}
+\subsubsection{Butt Welds}
 \label{butt-welds}
 In this type of welded joints, the mating parts are joined by having
 their ends attached together without any overlap. Typically the ends
@@ -6299,7 +6287,7 @@ If the welds are of good quality, they can be considered as strong as
 the plate, and its efficiency (welded member strength / solid member
 strength) is 100\%.
 
-\section{Fillet Welds}
+\subsubsection{Fillet Welds}
 \label{fillet-welds}
 In this type of welded joint, the weld is formed not on the flat end
 surface but instead on the angle (typically 90 degree) formed between
@@ -6307,7 +6295,7 @@ the mating parts. This type of welds are commonly classified according
 to the direction of loading: parallel welds or transverse welds.
 
 
-\section{Welded Joints under Static Axial and Shear Loading}
+\subsection{Welded Joints under Static Axial and Shear Loading}
 \label{section: stress in weld under axial and shear}
 Ideally, if the welding electrode is properly chosen so that it matches
 the properties of the parent materials, the stress and strength analysis
@@ -6349,7 +6337,7 @@ a minimum of 3 mm for plate less than 6 mm thick, and up to a minimum of
 fillet welds are typically done in pairs to maintain symmetry and avoid
 any resultant moments, in which case the effective weld area doubles.
 
-\section{Welded Joints under Static Torsional and Bending Loading}
+\subsection{Welded Joints under Static Torsional and Bending Loading}
 \label{welded-joints-under-static-torsional-and-bending-loading}
 External loading can cause torsional or bending to welded joints when
 the loads do not pass through the centroid of the welds---also called
@@ -6585,7 +6573,7 @@ $$\begin{aligned}
     \left| \vec{\tau}_{torsion} + \vec{\tau}_{shear} \right| &= \left| \vec{\tau}_{total} \right| = 27.9 \text{ MPa}                                                        
   \end{aligned}$$
 
-\section{Asymmetric Welded Joints}
+\subsection{Asymmetric Welded Joints}
 \label{asymmetric-welded-joints}
 There may arise situations where weld joints need not, or cannot, be
 symmetrical. This is mostly due to the geometry of the joining parts. In
@@ -6693,7 +6681,7 @@ Combine \(\tau_{shear}\) and \(\tau_{torsion}\), we have $$\begin{aligned}
     N_s &= \frac{427}{35.8} = 11.9
   \end{aligned}$$
 
-\section{Fatigue Considerations in Welded Joints}
+\subsection{Fatigue Considerations in Welded Joints}
 \label{fatigue-considerations-in-welded-joints}
 When welded joints are subjected to fatigue loading, small voids and
 inclusions which have little effect on static strength can constitute
@@ -6752,7 +6740,7 @@ $$\begin{gathered}
       L = 2.5 \times {10^{-1}} = 25\text{ cm} \hfill \\ 
     \end{gathered}$$
 
-\section{Summary}
+\subsection{Summary}
 \label{summary-6}
 In this chapter, load and stress analyses of welds are given in details.
 Strengths and weaknesses of different types of available welding
@@ -6764,7 +6752,7 @@ of inertia. Additional factors involved static vs. fatigue loading. Two
 key design parameters involved are the electrodes and the geometry of
 the weld (length and effective throat thickness).
 
-\section{Exercises}
+\subsection{Exercises}
 \label{exercises-6}
 [lab:\arabic{chapter}.\arabic{exercisesi}] Short answers
 
@@ -6798,7 +6786,7 @@ The safety factor of this welded joint is 3.
 
 \url{pictures/Welding/parallel-weld-exercise}
 
-\chapter{Bolted Joint Design}
+\section{Bolted Joint Design}
 \label{bolted-joint-design}
 At first look, threaded fasteners seem to be the most mundane of machine
 elements. Upon further investigation, one can see that these seemingly
@@ -6814,7 +6802,7 @@ design and selection of proper threaded fasteners are discussed.
 Applications of threaded fasteners in simple joints are also
 illustrated.
 
-\section{Thread forms, terminology, and standards}
+\subsection{Thread forms, terminology, and standards}
 \label{thread-forms-terminology-and-standards}
 The basic arrangement of a helical thread wound around a cylinder are
 illustrated in  \ref{fig: bolt terms}. Pitch, lead, and
@@ -6876,13 +6864,13 @@ vibration. The threads are easier to tap, especially on high-strength
 materials. Also, because of their fine threads, allow for finer
 adjustment and require less torque to obtain the same preload.
 
-\section{Static Screw Stresses}
+\subsection{Static Screw Stresses}
 \label{static-screw-stresses}
 When in use, screws are subjected to various stresses such as torsion
 during tightening, axial load, and thread bearing stresses. Let us
 consider each type of stress separately.
 
-\section{Torsion}
+\subsubsection{Torsion}
 \label{torsion-1}
 Threaded fasteners are subjected to torsional stresses during
 tightening, much like a cylindrical bar being twisted. The shear stress
@@ -6893,7 +6881,7 @@ substantial collar friction is normally present, in which case it is
 customary to assume that the torque transmitted through the threaded
 section is approximately half the wrench torque.
 
-\section{Axial Load}
+\subsubsection{Axial Load}
 \label{axial-load}
 The main purpose of threaded fasteners is to hold work pieces together
 by exerting compressive forces on them. Therefore they are typically
@@ -6906,7 +6894,7 @@ because threaded fasteners should always have enough ductility to permit
 local yielding at thread roots without damage. However, when we consider
 fatigue loading of bolts, this stress concentration is very important.
 
-\section{Combined Torsion and Axial Load}
+\subsubsection{Combined Torsion and Axial Load}
 \label{combined-torsion-and-axial-load}
 The combination of the stresses can be treated with multiaxial stress
 analysis which has been covered in \hyperref[section: multiaxial stress]{3.6}
@@ -6915,7 +6903,7 @@ since bolts and screws are considered ductile. With threaded fasteners,
 it is normal for some yielding to occur at the thread roots during
 initial tightening.
 
-\section{Thread Bearing (Compressive) Stress}
+\subsubsection{Thread Bearing (Compressive) Stress}
 \label{thread-bearing-compressive-stress}
 illustrates the force flow through a bolt and a nut used to clamp two
 members together. Compression between the screw and nut threads exists
@@ -6942,7 +6930,7 @@ load, similar to members of a compound bar, the load will be distributed
 most to the shortest (and stiffest) path. Hence, threads which are
 closer to the clamped members will carry higher loads and stresses.
 
-\section{Thread Shear (Stripping) Stress and Nut Thickness Requirement}
+\subsubsection{Thread Shear (Stripping) Stress and Nut Thickness Requirement}
 \label{thread-shear-stripping-stress-and-nut-thickness-requirement}
 Nut or bolt threads can be stripped along its cylindrical surface under
 sufficient overload. From the thread geometry shown in
@@ -6974,7 +6962,7 @@ Since the nuts are usually softer than bolts in order to allow slight
 yielding of the top threads and more uniform load distribution among the
 threads, the standard nut thickness is approximately \(7d/8\).
 
-\section{Thread Fastener Types}
+\subsection{Thread Fastener Types}
 \label{thread-fastener-types}
 shows basic types of threaded fasteners. Screws and bolts are by far the
 most common types, and the difference between them is only one of
@@ -7001,7 +6989,7 @@ components. Sometimes they cannot be used because of insufficient
 clearance to put a socket or wrench on the head. In such cases the
 hexagonal-socket head is often used.
 
-\section{Fastener Materials and Methods of Manufacture}
+\subsection{Fastener Materials and Methods of Manufacture}
 \label{fastener-materials-and-methods-of-manufacture}
 Materials for screws, nuts, and bolts are normally selected based on
 strength, weight, corrosion resistance, magnetic properties, life
@@ -7048,7 +7036,7 @@ associated with the environment and the other metals involved.
 Additionally, appropriate coatings should be considered for corrosion
 protection and to reduce thread friction and wear.
 
-\section{Bolt Tightening and Initial Tension}
+\subsection{Bolt Tightening and Initial Tension}
 \label{bolt-tightening-and-initial-tension}
 For most applications, screws and nut-bolt assemblies should ideally be
 tightened to produce an initial tensile force \(F_i\) nearly equal to the
@@ -7135,7 +7123,7 @@ $$T = 0.2F_id$$
 
 where \(d\) is the nominal major diameter of the thread.
 
-\section{Thread Loosening and Thread Locking}
+\subsection{Thread Loosening and Thread Locking}
 \label{thread-loosening-and-thread-locking}
 An inherent advantage of threaded fasteners in comparison with riveting
 or welding is that they can be easily disassembled without destroying
@@ -7202,7 +7190,7 @@ tighten gently. Then the standard nut is installed and fully
 tightened against the extra nut.
 \end{enumerate}
 
-\section{Bolt Tension and Bolted Joint Stiffness}
+\subsection{Bolt Tension and Bolted Joint Stiffness}
 \label{bolt-tension-and-bolted-joint-stiffness}
 Bolts are typically used to hold parts together in opposition to forces
 pulling or sliding them apart. Understanding load distribution between
@@ -7262,7 +7250,7 @@ and opposite load \(F_i\). When there is external load, the fraction of
 the load distributed depend on their stiffnesses and simply add (or
 subtract) from the original preload \(F_i\).
 
-\section{Bolt Stiffness}
+\subsubsection{Bolt Stiffness}
 \label{bolt-stiffness}
 The bolt stiffness \(k_b\) comes from the stifnesses of both the threaded
 (\(k_t\) and unthreaded (\(k_u\)) parts that are engaged within the
@@ -7284,7 +7272,7 @@ for bolt stiffness reduces to
 \label{eqn: bolt stiffness}
 \end{aligned}
 
-\section{Clamped Parts Stiffness}
+\subsubsection{Clamped Parts Stiffness}
 \label{clamped-parts-stiffness}
 Similar to bolt stiffness, the stiffness of clamped parts is analogous
 to two (or more) serially connected springs. Let us consider two clamped
@@ -7383,7 +7371,7 @@ material (aluminum) is softer than the bolt (steel). In this case, it
 may be advisable to use a washer to increase \(A_c\) and to increase the
 clamped parts stiffness.
 
-\section{Bolt Selection for Static Loading}
+\subsection{Bolt Selection for Static Loading}
 \label{bolt-selection-for-static-loading}
 The primary loading applied to bolts is tensile, shear, or a combination
 of the two. There may be some bending when the clamped parts are not
@@ -7393,7 +7381,7 @@ bolts are sometimes chosen arbitrarily. This is true for most
 noncritical applications where loads are small in which case bolt size
 selection is simply a matter of judgment and ease of assembly.
 
-\section{Tension Joints}
+\subsubsection{Tension Joints}
 \label{tension-joints}
 The primary application of bolted joints is to exert compressive load on
 clamped parts, thus preventing them from coming apart under external
@@ -7439,7 +7427,7 @@ For the bolted joint to have a safety factor of \(N_s\)
 $$\label{eqn: tension joint bolt sizing}
   A_t = \frac{N_sP}{S_p}$$
 
-\section{Friction Joints}
+\subsubsection{Friction Joints}
 \label{friction-joints}
 Another application for bolted joints is to prevent clamped parts from
 sliding apart under shear forces. It is a common misconception that
@@ -7523,7 +7511,7 @@ The smallest bolt with \(A_t\) of at least 45.5 mm\(^2\) is M10\$\texttimes{}\$1
 or M10\$\texttimes{}\$1.25. Since this is larger than the M5 answer for the
 tension joint, M10 bolt is the answer.
 
-\section{Flange Joints}
+\subsubsection{Flange Joints}
 \label{flange-joints}
 Flange joints are joints in which bolts are arranged in circular arrays.
 They are typically employed for pressure vessels and pipe connections.
@@ -7625,7 +7613,7 @@ $$N = \frac{1.62 \times 10^{-2}}{496 \times 10^{-6}} = 25.4$$
 
 Therefore, we need 26 M27 \(\times\) 2 for this flange joint.
 
-\section{Bolt Selection for Fatigue Loading}
+\subsection{Bolt Selection for Fatigue Loading}
 \label{bolt-selection-for-fatigue-loading}
 Fatigue in bolts is caused by fluctuating tension. In this section,
 principles of fatigue covered in section 4.2 is applied to bolts.
@@ -7670,8 +7658,8 @@ to separate.
 It is important to recognize that small amount of thread root yielding
 occurs when bolts are tightened to the full proof load is not harmful.
 
-\section{Bolt sizing for a flange joint under fatigue loading}
-\label{sec:org02c6e3f}
+\subsubsection{Bolt sizing for a flange joint under fatigue loading}
+\label{sec:orgc60f720}
 
 Using the same cylindrical pressure vessel from
 but the vessel is pressurized and depressurized repeatedly between 0 and
@@ -7728,7 +7716,7 @@ $$N = \frac{3.10 \times 10^{-2}}{1473 \times 10^{-6}} = 21$$
 
 So we would need 21 M48 \(\times\) 5 bolts.
 
-\section{Increasing Bolted Joint Fatigue Strength}
+\subsection{Increasing Bolted Joint Fatigue Strength}
 \label{increasing-bolted-joint-fatigue-strength}
 There are many helpful design guidelines to improve bolt fatigue
 strength.
@@ -7755,7 +7743,7 @@ to its proof load.
 replacement of overused bolts.
 \end{enumerate}
 
-\section{Summary}
+\subsection{Summary}
 \label{summary-7}
 Bolted joints are, in most cases, non-permanent joints that utilize
 clamping force in order to enhance the strength of bolt-clamped parts
@@ -7767,7 +7755,7 @@ the potential of friction between members, providing protection against
 shearing or sliding forces. Other considerations such as self-locking,
 member stiffness, and fatigue loads are considered as well.
 
-\section{Exercises}
+\subsection{Exercises}
 \label{exercises-7}
 [lab:\arabic{chapter}.\arabic{exercisesi}] Short answers
 
@@ -7843,7 +7831,7 @@ carefully about what kind of bolted joint this is)
 \caption{Exercise}
 \end{figure}
 
-\chapter{Machine Components Interrelationships}
+\section{Machine Components Interrelationships}
 \label{machine-components-interrelationships}
 The goal of any mechanical component is so that each of them come
 together to form a machine that serves a useful purpose. The design of a
@@ -7861,7 +7849,7 @@ a design of one component affect that of another, the examples should
 start us on thinking about machine design as a network of
 interconnected, interdependent processes.
 
-\section{Processes of Mechanism Analysis}
+\subsection{Processes of Mechanism Analysis}
 \label{processes-of-mechanism-analysis}
 At component design level, a designer has often already established
 requirements and overall shapes of the intended mechanism. In order to
@@ -7888,7 +7876,7 @@ component interaction holds little benefit. Instead, let us take a look
 at a few simple mechanisms and apply the discussed procedures in
 analyzing/designing them.
 
-\section{Design of a Simple Weight Scale}
+\subsection{Design of a Simple Weight Scale}
 \label{design-of-a-simple-weight-scale}
 A traditional weight scale is composed of a horizontal lever, a column,
 and two scale pans suspending from each end of the lever by chains. The
@@ -7988,7 +7976,7 @@ is 800 N, which is the maximum weight that this scale can measure.
 \end{enumerate}
 \end{enumerate}
 
-\section{Design of a Bicycle Tire Pump}
+\subsection{Design of a Bicycle Tire Pump}
 \label{design-of-a-bicycle-tire-pump}
     Consider a bicycle tire pump as shown in
 \ref{fig: bike pump}. It is operated by pushing
@@ -8191,7 +8179,7 @@ $$\begin{gathered}
 \end{enumerate}
 \end{enumerate}
 
-\section{Design of a Chest Exercise Equipment}
+\subsection{Design of a Chest Exercise Equipment}
 \label{design-of-a-chest-exercise-equipment}
 Chest exercise equipment is composed of two identical springs attached
 to a spring plate at each end. The user simply pulls on the handles and
@@ -8273,7 +8261,7 @@ the number of required active coils is
 $$N_a = \frac{Gd}{8C^3k} = \frac{79.3 \times 10^9(5.5 \times 10^{-3})}{8(8^3)(700)} = 152\text{ coils}$$
 \end{enumerate}
 
-\section{Summary}
+\subsection{Summary}
 \label{summary-8}
 This chapter discusses the application of concepts from Statics and
 Mechanics of Materials to analyze loads and stress on assembled
@@ -8282,7 +8270,7 @@ materials and joints and translate them into corresponding stresses.
 Components are not designed solely to satisfy its requirements but those
 of the entire mechanism.
 
-\section{Exercises}
+\subsection{Exercises}
 \label{exercises-8}
 [lab:\arabic{chapter}.\arabic{exercisesi}] Design of a Swing Set.
 
@@ -8582,9 +8570,9 @@ Note: moment of inertia of square tube with outer cross section
 \(a \times a\) and thickness \(t\) throughout is
 $$I = \frac{a^4 - (a-t)^4}{12}$$
 
-\part{การใช้โปรแกรมช่วยออกแบบ}
+\chapter{การใช้โปรแกรมช่วยออกแบบ}
 \label{the-help}
-\chapter{Introduction to Computer-aided Design}
+\section{Introduction to Computer-aided Design}
 \label{introduction-to-computer-aided-design}
 Nowadays, computers facilitate various engineering tasks from simulation
 to programming to design. Before computer-aided design software usage
@@ -8613,7 +8601,7 @@ should already be proficient with drawing 3-dimensional solids and
 assembling parts using SolidWorks. This chapter will focus mainly on
 finite element analysis of a given part using SolidWorks.
 
-\section{Finite Element Analysis (FEA)}
+\subsection{Finite Element Analysis (FEA)}
 \label{finite-element-analysis-fea}
 Generally, structures are composed of multiple members. Machines and
 their components also typically involved complicated geometries,
@@ -8660,7 +8648,7 @@ exhibit the potential of FEA as well as its complexities. For
 simplicity, only two basic structural elements will be discussed here;
 the one dimensional \emph{bar element} and the \emph{beam element}.
 
-\section{Bar Elements}
+\subsection{Bar Elements}
 \label{bar-elements}
 A bar element, also known as a truss bar element or axial element, can
 be considered the simplest form of structural finite element. An element
@@ -8669,7 +8657,7 @@ area \(A\) has two nodes, one at each end. The nodes are numbered 1 and 2,
 respectively. It is important to develop a set of two equations in
 matrix form to relate the \emph{joint forces} to the \emph{joint displacements}.
 
-\section{Direct Equilibrium Method}
+\subsubsection{Direct Equilibrium Method}
 \label{direct-equilibrium-method}
 The derivation based on the direct equilibrium method, obviously, is
 simple and clear. It is, however, only practically applicable to bar and
@@ -8706,7 +8694,7 @@ where \([\mathbf{k}]\) is called the \emph{stiffness matrix} of the element.
 The matrix relates the joint displacement to the joint forces on the
 element.
 
-\section{Energy Method}
+\subsubsection{Energy Method}
 \label{energy-method}
 The energy method, which has been mentioned and partially discussed in
 \hyperref[subsub: energy method]{3.5.8.2}, is applicable to finite element
@@ -8754,7 +8742,7 @@ displacements, we have
 
 The stiffness matrix derived from \ref{eqn: stiffness matrix energy} is the same as those given in \ref{eqn: stiffness matrix equilibrium}.
 
-\section{Beam Elements}
+\subsection{Beam Elements}
 \label{beam-elements}
 Consider an initially straight beam element of uniform cross section.
 The element, obviously, has a constant moment of inertia \(I\), Young's
@@ -8888,7 +8876,7 @@ In fact, this last equation is the basis for most finite element
 analysis software. By developing a stiffness matrix [*k*], the program
 can determine nodal deformations for given nodal forces and moments.
 
-\section{Finite Element Analysis using Solidworks}
+\subsection{Finite Element Analysis using Solidworks}
 \label{finite-element-analysis-using-solidworks}
 As mentioned previously, students should already be previously familiar
 with Solidworks from ME 200. The main application of Solidworks in that
@@ -8906,7 +8894,7 @@ etc. Based on relevancy, we will focus on static, buckling, and fatigue
 analyses. However, before diving into individual analyses, we will first
 explore some common features of these analyses.
 
-\section{Solidworks Simulation Module Basics}
+\subsubsection{Solidworks Simulation Module Basics}
 \label{solidworks-simulation-module-basics}
 Once installed, the module can be accessed by clicking Solidworks add-in
 tab and choose Solidworks Simulation, after which the type of simulation
@@ -8946,7 +8934,7 @@ power and time.
 
 Now, let us delve further into the details of each type of analysis.
 
-\section{Static Analysis}
+\subsubsection{Static Analysis}
 \label{static-analysis}
 Static analysis can be performed to determine the stresses, strains, and
 safety factors in the component. In addition, a preliminary static
@@ -9027,7 +9015,7 @@ the MDET to determine safety factors.
 
 It is shown that the corresponding minimum safety factor is 3.3.
 
-\section{Buckling Analysis}
+\subsubsection{Buckling Analysis}
 \label{buckling-analysis}
 Solidworks buckling analysis is used mainly to determine the critical
 load and corresponding mode shape (see section 4.3) of the part. Its
@@ -9060,7 +9048,7 @@ obtain the following figure.
 From the figure, the load factor of 95.8 indicated the buckling safety
 factor.
 
-\section{Fatigue Analysis}
+\subsubsection{Fatigue Analysis}
 \label{fatigue-analysis}
 A fatigue analysis required that a static analysis with identical
 fixture and loading conditions have already been run, since fatigue
@@ -9111,7 +9099,7 @@ at approximately 90,000 cycles. It is important to note that this number
 is based on average values of material properties and should not be
 taken as an exact useful life.
 
-\section{Summary}
+\subsection{Summary}
 \label{summary-9}
 As personal computers become increasingly powerful, so does finite
 element analysis programs. While understanding the basics of load and
@@ -9127,7 +9115,7 @@ incorrect inputs. Hence, students must understand how to model loads,
 fixtures, and other conditions accurately to utilize the full potential
 of the software.
 
-\section{Exercises}
+\subsection{Exercises}
 \label{exercises-9}
 [lab:\arabic{chapter}.\arabic{exercisesi}] Determine the stresses and
 maximum deflection of a 2-m long cantilever beam with 2 \(\times\) 3 cm
@@ -9144,7 +9132,7 @@ Explain the reason behind the trend.
 
 \appendix
 
-\chapter{Properties Structural Steel Sections}
+\section{Properties Structural Steel Sections}
 \label{appendix: structural steel properties}
 \begin{table}[htbp]
 \label{table: s-shaped sections}

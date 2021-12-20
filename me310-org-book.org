@@ -140,31 +140,17 @@ Chapters 3 - 10.
    การออกแบบที่ดีจะต้องคำนึงคำนึงถึงสมรรถนะ ต้นทุน และความปลอดภัยของชิ้นส่วน การออกแบบที่เหมาะสมที่สุดต้องเป็นทางเลือกที่ดีที่สุดซึ่งยังตอบโจทย์ข้อจำกัดทุกข้อ ซึ่งทางเลือกที่ดีที่สุดอาจจะหมายถึงน้ำหนักน้อยที่สุด ปริมาตรต่ำที่สุด หรือราคาต้นทุทถูกที่สุด เป็นต้น ซึ่งกระบวนการออกแบบโดยทั่วไปมีขั้นตอนหลักๆดังนี้
 
 1. วิเคราะห์การล้มเหลวแบบต่างๆของชิ้นส่วน
-
 2. หาความสัมพันธ์ระหว่างภาระที่กระทำ ความเค้นลัพธ์ และการเปลี่ยนรูปของวัสดุ
+3. วิเคราะห์หาค่าความเค้นและการเปลี่ยยนรูปมากที่สุดที่ชิ้นส่วนควรจะรับได้เพื่อที่เครื่องจักรจะได้ทำหน้าที่ของมัน
+4. เลือกค่าความปลอดภัยที่เหมาะสม
 
-3. Determine the maximum usable value of a significant quantity such as
-   stress or deformation that may cause failure. Using this value
-   together with equation(s) obtained from part 2 to determine allowable
-   loads.
+กระบวนการออกแบบข้างต้นนี้ยังอาจต้องมีการปรับเปลี่ยนให้เหมาะสมกับการออกแบบในแต่ละกรณี บางขั้นตอนอาจไม่มีความจำเป็นหรือชัดเจนมากจรไม่ต้องหาข้อมูลเพิ่ม เนื่องจากการออกแบบในแต่ละกรณีก็ต่างกันไป คำตอบของโจทย์การออกแบบก็ย่อมต่างกันไปเช่นกัน
 
-4. Select the safety factor.
+*** กระบวนการออกแบบทางวิศวกรรม
 
-The preceding procedure must be adjusted to each individual case, as
-certain steps may be unnecessary or obvious. No two design problems are
-exactly the same, and no two design solutions should be the same.
-
-*** Engineering Design Processes
-    :PROPERTIES:
-    :CUSTOM_ID: engineering-design-processes
-    :END:
-
-Solutions to design problems start at the very first with the
-recognition of problems or needs for a part, machine, or system. The
-problems or needs are then formulated into sets of requirements and
-constraints. In design problems, there are usually more than one right
-answer. Design considerations often require a trial-and-error process,
-as illustrated by [[fig: engineering design processes]]
+แนวทางแก้ไขปัญหาการออกแบบเริ่มด้วยการรับรู้ปัญหาหรือความต้องการชิ้นส่วน เครื่องจักร หรือระบบ แล้วจึงกำหนดปัญหาหรือความต้องการเป็นชุดข้อกำหนดและ
+ข้อจำกัดของสิ่งที่ต้องการจะออกแบบ ในปัญหาการออกแบบ มักจะมีคำตอบที่ถูกมากกว่าหนึ่งข้อ และหลายครั้ง คำตอบที่ได้มาก็มาจากการลองผิดลองถูก
+ตามที่แสดงโดยรูปที่ [[fig: engineering design processes]]
 
 #+CAPTION: กระบวนการออกแบบชิ้นส่วนเครื่องกล
 #+NAME: fig: engineering design processes
@@ -173,14 +159,7 @@ as illustrated by [[fig: engineering design processes]]
   \includegraphics[width=\textwidth]{pictures/intro-eng-design/eng-design-process}
 \end{marginfigure}
 
-Product realization and production involve multiple, recursive, and
-sometimes, concurrent processes. There are also many possible backward
-loops where corrections need to be made in earlier stages of design. For
-example, during the prototyping period, it is found that two parts that
-are intended to mate do not fit together because they shrink during
-cooling. It may not be at all possible to change the manufacturing
-processes, in which case the components have to be redesigned to factor
-in the thermal shrinkage.
+การออกแบบผลิตภํณฑ์และการผลิตนั้นต้องกระบวนการที่หลากหลาย ซ้ำครั้ง และบางครั้งก็เกิดขึ้นพร้อมกัน หลายครั้งต้องมีการกลับไปแก้ใหม่ที่กระบวนการต้นๆ ยกตัวอย่างเช่น ในช่วงการผลิตชิ้นส่วนต้นแบบ ได้พบว่ามีชิ้นส่วนที่ประกอบกันไม่ได้เนื่องจากเกิดการหดตัวของวัสดุตอนช่วงที่ปล่อยให้ชิ้นงานเย็นตัวลง ซึ่งอาจเป็นได้ว่าไม่สามารถใช้กระบวนการผลิตอื่นกับชิ้นส่วนนี้ได้ ดังนั้นจะต้องมีการออกแบบใหม่เผื่อการหดตัวของวัสดุนี้เอาไว้ด้วย
 
 In this class, our efforts will be mainly focused on problem
 formulation, conceptual, system, and component design. Design
@@ -235,16 +214,26 @@ coconut meat. The first is to scrape it off the shell, and the second is
 to grind the meat together with the shell. There may be other possible
 methods, but in this example we will only consider these two.
 
- L4.5cm L4.5cm L4.5cm Functional Requirement &\\
-Design Parameters & Scraping coconut meat & Grinding coconut meat\\
-Analysis & Strength of meat Beam bending & Strength of shell Grinding
-teeth strength\\
-References & Mechanics of Material & Mechanics of Material\\
-Risks & Broken scraper & Broken grinder teeth Stuck grinder blade\\
-Countermeasures & Strong material Safety factor & Safety factor Allow
-proper clearance\\
+#+CAPTION: ตาราง FRDPARRC สำหรับการออกแบบเครื่องเตรียมมะพร้าวขูด
+\begin{table*}[htbp]
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    Functional Requirement & Scraper & Grinder \\
+    \midrule
+    Design Parameters & Scraping coconut meat & Grinding coconut meat \\
+    Analysis & Strength of meat & Strength of shell \\
+    && Grinding teeth strength \\
+    References & Mechanics of materials & Mechanics of materials \\
+    Risks & Broken scraper & Broken grinder teeth \\
+    && Stuck grinder blade \\
+    Countermeasures & Strong material & Safety factor \\
+    & Safety factor & Allow proper clearance \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
 
-Design of a Lawn Mower
+*** Design of a Lawn Mower
 
 Ahh.. Grass lawn maintenance. Very possibly one of the most budget
 consuming activities in Thailand household landscaping business
